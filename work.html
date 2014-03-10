@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Page</title>
+    <link href="http://www.blacktie.co/demo/small/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,800italic,400,700,800);
+        body
+        {
+            font-family: 'Open Sans' ,sans-serif;
+            background: #f5f6f7;
+            color: #222;
+            font-size: 20px;
+            line-height: 36px;
+            font-weight: 300;
+        }
+       
+        .showcase
+        {
+            padding: 0;
+            width: 100%;
+        }
+        .showcase-tiles
+        {
+            display: table-row;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        .showcase-info
+        {
+            display: table-row;
+            text-align: center;
+        }
+        .d-hover
+        {
+            background: none repeat scroll 0 0 rgba(231, 76, 60, 0.9);
+            bottom: 0;
+            display: none;
+            left: 0;
+            line-height: 25px;
+            padding-top: 20%;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 0;
+        }
+        .d-hover p
+        {
+            display: block !important;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 300;
+            margin-top: 25px;
+            z-index: 500;
+        }
+        ul.slides
+        {
+            line-height: 0;
+            padding: 0;
+        }
+        ul.slides li
+        {
+            float: left;
+            width: 25%;
+        }
+        ul.slides li a
+        {
+            color: #fff;
+        }
+        dir, menu, ul
+        {
+            display: block;
+            list-style-type: disc;
+        }
+        @media only screen and (max-width: 1000px)
+        {
+            ul.slides li
+            {
+                width: 50%;
+            }
+        }
+        @media only screen and (max-width: 767px)
+        {
+            ul.slides li
+            {
+                width: 100%;
+            }
+        }
+        ul.slides li a
+        {
+            display: block;
+            height: 100%;
+            position: relative;
+            width: 100%;
+        }
+        ul.slides li a:hover .d-hover
+        {
+            display: block;
+        }
+        ul.slides li a img
+        {
+            width: 100%;
+        }
+        ul.slides li a p
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="showcase-tiles">
+        <ul class="slides">
+           
+            <li><a href="kylie/index.html">
+                <img alt="Kylie" src="images/kylie.gif"><span
+                    class="d-hover">Birth Announcement<p>
+                        Converted Flash page to HTML <br />Used jQuery to animate and cufon for fonts</p>
+                </span></a></li>
+            <li><a href="js/rotatefade.js">
+                <img alt="Image Rotator" src="images/bn-rotate.gif"><span
+                    class="d-hover">jQuery Image Rotator Plugin<p>
+                        Wrote custom plugin to fade in/out list of images<br />View source code</p>
+                </span></a></li>
+            <li><a href="work/nook.html">
+                <img alt="Image Rotator Rewrite" src="images/bn-rotate-deux.gif"><span
+                    class="d-hover">jQuery Image Rotator Plugin<p>
+                        Create a Flash replacement that features a tour of the nook<br />
+                        Rewrote image rotate plugin to allow more options</p>
+                </span></a></li>
+            <li><a href="work/hgg.html">
+                <img alt="Custom Dropdown" src="images/custom-dropdown.gif"><span
+                    class="d-hover">Custom Dropdown<p>
+                        Implemented a custom select dropdown<br />
+Used the scrollable plugin from jquery tools library<br />Implemented lazy loading of products</p>
+                </span></a></li>
+            <li><a href="work/kirkus.html">
+                <img alt="Poll" src="images/poll.gif"><span
+                    class="d-hover">Custom Voting Poll<p>
+                        Incorporated a voting poll using a 3rd party REST API<br />(Poll is now closed)</p>
+                </span></a></li>
+            <li><a href="#">
+                <img alt="Merchandising Pages" src="images/merch-page.gif"><span
+                    class="d-hover">HTML and CSS<p>
+                        Implemented custom CSS framework to divide layout into grids<br />
+Built XSL to generate markup from XML</p>
+                </span></a></li>
+
+                <li><a href="work/gallery.html">
+                <img alt="Image Gallery" src="images/slideshow.gif"><span
+                    class="d-hover">Image Gallery Slideshow<p>
+                        HTML, CSS, JS and XSL<br />
+Incorporated carousel and slideshow plugins</p>
+                </span></a></li>
+                  <li><a href="http://www.barnesandnoble.com/bn-studio/videos-podcasts/index.asp">
+                <img alt="Navigation" src="images/menu.gif"><span
+                    class="d-hover">Flyout Menu Navigation<p>
+                       Nested lists used to implement flyouts with CSS and JS<br />
+Built XSL to generate markup from XML</p>
+                </span></a></li>
+        </ul>
+    </div>
+</body>
+</html>

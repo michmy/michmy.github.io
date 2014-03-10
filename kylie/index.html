@@ -1,0 +1,135 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kylie Huynh</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 0;
+            color: #ec008c;
+            font: bold 18px Helvetica, Arial, sans-serif;
+        }
+        a {text-decoration:none;color:#fff;}
+        a:hover {color:pink;}
+        h1
+        {
+            font-size: 120px;
+            letter-spacing: -1px;
+            margin: 35px 0;
+            padding: 0;
+            height:280px;
+            
+        }
+        h1 span {display:none;}
+        #birth-details
+        {
+            font-size: 20px;
+            margin: 10px 0 40px;
+            height:30px;
+            
+        }
+        
+        #birth-details span {display:none;}
+        
+        #wrap
+        {
+            position: relative;
+            width: 600px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        #thin, #thick
+        {
+            background: #ec008c;
+        }
+        #thin
+        {
+            height: 10px;
+            width: 0 /*0*/;
+        }
+        #thick
+        {
+            height: 30px;
+            width: 600px;
+            margin-left: 600px /*600px*/;
+        }
+        .menu {list-style:none;margin:0 15px;padding:0; display:none;line-height:30px}
+        .menu li {float:left;color:#fff;margin-right:20px;font-size:21px;}
+        #parents {text-align:right;margin-top:10px;font-size:18px;display:none;}
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>
+
+            <span id="first">Kylie</span><br />
+            <span id="last">Huynh</span></h1>
+        <div id="thin">
+        </div>
+        <div id="birth-details">
+            <span>Nov 2nd 2010 / 1:35pm / 7 pounds / 2 ounces / 19 3/4 inches</span></div>
+        <div id="thick">
+
+            <ul class="menu">
+                <li><a href="">details</a></li>
+                <li><a href="">photos</a></li>
+                <li><a href="">email</a></li>
+            </ul>
+        </div>
+        
+        
+        <div id="parents">Proud new parents, Khuong & Michelle Huynh</div>
+
+    </div>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="cufon-yui.js"></script>
+
+    <script type="text/javascript" src="HelveticaTextbook-Bold_400.font.js"></script>
+
+    <script type="text/javascript">
+
+
+
+        function animateLines() {
+            $('#thin').animate({ 'width': '600px' }, 2000);
+            $('#thick').animate({ marginLeft: 0 }, 2000, fadeInDetails);
+        }
+
+        function fadeInLast() {
+            $('h1 span#last').fadeIn(1500, animateLines);
+        }
+
+        function fadeInDetails() {
+            $('#birth-details span').fadeIn(1500, fadeInParents)
+        }
+
+        function fadeInParents() {
+            $('#parents').fadeIn(1500, fadeInMenu)
+        }
+
+        function fadeInMenu() {
+            $('#thick .menu').fadeIn(1500)
+        }
+        $(function () {
+            Cufon.replace('h1, #birth-details, #parents');
+            Cufon.replace('ul.menu li a', { hover: { color: '#ff9ed7'} })
+
+            $('h1 span#first').fadeIn(1500, fadeInLast);
+
+        });
+    </script>
+
+<noscript>
+<style>
+    .menu,#parents,#birth-details span {display:block}
+    h1 {height:auto;}
+    h1 span {display:inline;}
+    #thin {width:600px;}
+    #thick {margin-left:0;}
+</style>
+</noscript>
+</body>
+</html>
+
