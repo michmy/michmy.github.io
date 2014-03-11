@@ -1,0 +1,247 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title>Untitled Page</title>
+    <link href="normalize.css" />
+    <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <style>
+        body {
+            font: 0.8em Arial, sans-serif;
+        }
+        ul {
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+        a:link, a:visited {
+            text-decoration: none;
+        }
+        #ow-post-plans {
+            color: #FFFFFF;
+            float: left;
+            font-family: 'Raleway', sans-serif;
+            margin-left: 15px;
+            margin-top: 30px;
+        }
+        #ow-post-plans li {
+            background: url("assets/images/bg_gradient.png") no-repeat scroll 0 45px padding-box #768AAF;
+            border-radius: 8px 8px 8px 8px;
+            box-shadow: 0 4px 5px -5px gray;
+            cursor: pointer;
+            float: left;
+            margin-right: 2px;
+            text-align: center;
+            width: 226px;
+        }
+        #ow-post-plans li .plan-head {
+            background: url("assets/images/bg_plan.png") no-repeat scroll center bottom transparent;
+        }
+        #ow-post-plans li .plan-head h3 {
+            border-bottom: 1px solid #51658A;
+            color: #FFFFFF;
+            font-size: 1.8em;
+            margin: 0;
+            padding: 20px 5px 5px;
+            text-transform: uppercase;
+        }
+        #ow-post-plans li .plan-head hr {
+            background-color: #8A9EC4;
+            border: 0 none;
+            color: #8A9EC4;
+            height: 1px;
+            margin: 0;
+        }
+        #ow-post-plans li .plan-head p {
+            font-size: 1.5em;
+            line-height: 1.2;
+            margin: 0;
+            padding: 20px 10px 45px;
+        }
+        #ow-post-plans li .plan-head p.plan-views {
+            line-height: 1;
+            padding-top: 17px;
+        }
+        #ow-post-plans li .plan-head .views-qty {
+            display: block;
+            font-size: 1.6em;
+            font-weight: bold;
+        }
+        #ow-post-plans li .plan-head .views-label {
+            text-transform: uppercase;
+        }
+        #ow-post-plans li .plan-buy {
+            background: none repeat scroll 0 0 #E2E2E2;
+            color: #666666;
+            padding-bottom: 35px;
+        }
+        #ow-post-plans li .plan-buy strong {
+            display: block;
+            font-size: 4em;
+            font-weight: normal;
+            padding: 15px 0 30px;
+        }
+        #ow-post-plans li .plan-buy a.btn-buy {
+            background: none repeat scroll 0 0 padding-box #8AA748;
+            border-radius: 8px 8px 8px 8px;
+            color: #FFFFFF;
+            font: bold 1.5em Arial,sans-serif;
+            padding: 7px 40px;
+        }
+        #ow-post-plans li .plan-buy a.btn-buy:hover {
+            background: none repeat scroll 0 0 #A7C65C;
+            text-decoration: none;
+        }
+        #ow-post-plans li#plan-3 {
+            background: url("assets/images/bg_gradient_darker.png") no-repeat scroll 0 45px #3A5486;
+        }
+        #ow-post-plans li#plan-4 {
+            background: url("assets/images/bg_gradient_darkest.png") no-repeat scroll 0 45px #00376D;
+        }
+        #ow-post-plans li.active, #ow-post-plans li#plan-3.active, #ow-post-plans li#plan-4.active {
+            background: url("assets/images/bg_gradient_active.png") no-repeat scroll 0 34px #D16A5B;
+            box-shadow: 0 15px 0 #FFFFFF, 0 0 10px #666666;
+            margin: -20px -10px 0;
+            position: relative;
+            width: 240px;
+            z-index: 2;
+        }
+        #ow-post-plans li.active .plan-head, #ow-post-plans li#plan-3.active .plan-head, #ow-post-plans li#plan-4.active .plan-head {
+            background: url("assets/images/bg_plan_active.png") no-repeat scroll center bottom transparent;
+        }
+        #ow-post-plans li.active .plan-head h3, #ow-post-plans li#plan-3.active .plan-head h3, #ow-post-plans li#plan-4.active .plan-head h3 {
+            border-color: #CC6350;
+        }
+        #ow-post-plans li.active .plan-head hr, #ow-post-plans li#plan-3.active .plan-head hr, #ow-post-plans li#plan-4.active .plan-head hr {
+            background-color: #E38063;
+            color: #E38063;
+        }
+        #ow-post-plans li.active .plan-buy, #ow-post-plans li#plan-3.active .plan-buy, #ow-post-plans li#plan-4.active .plan-buy {
+            background: none repeat scroll 0 0 #FFFFFF;
+        }
+        #ow-post-plans li.active .plan-buy strong, #ow-post-plans li#plan-3.active .plan-buy strong, #ow-post-plans li#plan-4.active .plan-buy strong {
+            padding-bottom: 35px;
+            padding-top: 30px;
+        }
+        .ow-plans-wrapper {
+            margin: 0 auto 40px;
+            width: 960px
+        }
+        #post-plan-description {
+            background: none repeat scroll 0 0 padding-box #FFFFFF;
+            border-color: #CCCCCC;
+            border-radius: 12px 12px 12px 12px;
+            border-style: solid;
+            border-width: 1px;
+            box-shadow: 0 0 10px #999999;
+            clear: both;
+            position: relative;
+            top: -2px;
+            width: 100%;
+            z-index: 1;
+        }
+        #post-plan-description > div {
+            overflow: auto;
+            padding: 20px;
+        }
+        #post-plan-description > div ul {
+            margin-left: 20px;
+        }
+        #post-plan-description > div ul li {
+            background: url("assets/images/expressed-interest-bg.gif") no-repeat scroll -5px -9px transparent;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            padding-left: 38px;
+        }
+        #post-plan-description > div ul li span {
+            font-weight: bold;
+        }
+        #post-plan-description > div em {
+            clear: both;
+            display: block;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="ow-plans-wrapper">
+        <ul id="ow-post-plans">
+            <li data-href="/Post/guest/PostPlans/1" id="plan-1">
+
+                    <div class="plan-head">
+                        <h3> 1 Job Posting </h3>
+                        <hr>
+                        <p>Start building <br>your Talent Community</p>
+                            
+
+                    </div>
+                    <div class="plan-buy">
+                        <strong>$795</strong>
+                        <a href="/SignUp/guest/SignUp?productId=1" class="btn-buy">Buy Now</a>
+                    </div>
+                      
+                </li>
+            <li data-href="/Post/guest/PostPlans/2" class="active" id="plan-2">
+
+                    <div class="plan-head">
+                        <h3> 1 Job Posting </h3>
+                        <hr>
+                            <p class="plan-views">
+                            <span class="views-qty">20</span>
+                            <span class="views-label">Candidate Views</span>
+                        </p>
+                            
+
+                    </div>
+                    <div class="plan-buy">
+                        <strong>$995</strong>
+                        <a href="/SignUp/guest/SignUp?productId=2" class="btn-buy">Buy Now</a>
+                    </div>
+                      
+                </li>
+            <li data-href="/Post/guest/PostPlans/3" id="plan-3">
+
+                    <div class="plan-head">
+                        <h3> 3 Job Postings </h3>
+                        <hr>
+                            <p class="plan-views">
+                            <span class="views-qty">75</span>
+                            <span class="views-label">Candidate Views</span>
+                        </p>
+                            
+
+                    </div>
+                    <div class="plan-buy">
+                        <strong>$2,395</strong>
+                        <a href="/SignUpPackage/guest/SignUp?productId=3" class="btn-buy">Buy Now</a>
+                    </div>
+                      
+                </li>
+            <li data-href="/Post/guest/PostPlans/4" id="plan-4">
+
+                    <div class="plan-head">
+                        <h3> 5 Job Postings </h3>
+                        <hr>
+                            <p class="plan-views">
+                            <span class="views-qty">150</span>
+                            <span class="views-label">Candidate Views</span>
+                        </p>
+                            
+
+                    </div>
+                    <div class="plan-buy">
+                        <strong>$3,495</strong>
+                        <a href="/SignUpPackage/guest/SignUp?productId=4" class="btn-buy">Buy Now</a>
+                    </div>
+                      
+                </li>
+        </ul>
+        <div id="post-plan-description">
+            <div>
+                <h2>Starter Package</h2><p>Our single Premium posting includes all the features of the Standard posting, as well as the ability to search for and review a select number of qualified candidate profiles.</p><ul><li><span>20 Candidate Views:</span> Proactively search for candidates and review up to 20 qualified OneWire Profiles and downloadable resumes.</li>
+                <li><span>Unlimited Applicant Review:</span> Review, sort, and filter all applicants who apply to your posting.</li>
+                <li><span>Unlimited Network Messaging:</span> Communicate directly with engaged and relevant candidates using OneWire’s internal messaging system.  </li><li><span>Exclusive Talent Community:</span> Gain continual access to all candidates who join your company’s Talent Community, whether or not your posting is active.</li></ul><em>Sales Tax may apply for some purchases within the State of New York</em>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

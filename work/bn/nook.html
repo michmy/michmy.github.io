@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script type="text/javascript" src="http://images.barnesandnoble.com/presources/community/js/jquery-latest.js"></script>
+    <script type="text/javascript" src="http://images.barnesandnoble.com/presources/swf/storefront/js/swfobject.js"></script>
+    <script src="http://images.barnesandnoble.com/pimages/js/rotatefade.js"></script>
+    <link href="http://images.barnesandnoble.com/pimages/bravo/css/cdsPDP.css" rel="stylesheet"
+        media="screen" type="text/css" />
+    <style>
+        #hero
+        {
+            height: 490px;
+        }
+        
+        .nook-features
+        {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: relative;
+            z-index: 2;
+        }
+        .paging-control, #watch-video
+        {
+            float: left;
+            position: absolute;
+            top: 444px;
+            z-index: 2;
+        }
+        #watch-video
+        {
+            left: 805px;
+        }
+        #hero .paging-control ul
+        {
+            float: left;
+            position: static;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: inline;
+            background-image: url(http://images.barnesandnoble.com/pimages/bravo/intro/7layer_nookdemo_nav.gif);
+            background-repeat: no-repeat;
+        }
+        #hero .paging-control li
+        {
+            position: static;
+            float: left;
+            margin: 0;
+        }
+        
+        #hero .paging-control li a
+        {
+            background-image: url(http://images.barnesandnoble.com/pimages/bravo/intro/7layer_nookdemo_nav.gif);
+            background-repeat: no-repeat;
+            text-indent: -9999px;
+            display: block;
+            height: 38px;
+            position: relative;
+        }
+        .paging-control li a:active, .paging-control li a.active
+        {
+            outline: 0;
+        }
+        
+        #page-1 a
+        {
+            background-position: 0 0;
+            width: 115px;
+        }
+        #page-1 a:hover, #page-1 a.active
+        {
+            background-position: 0 -38px;
+        }
+        #page-2 a
+        {
+            background-position: -115px 0;
+            width: 125px;
+        }
+        #page-2 a:hover, #page-2 a.active
+        {
+            background-position: -95px -76px;
+            left: -20px;
+        }
+        #page-3 a
+        {
+            background-position: -220px 0;
+            width: 190px;
+            left: -20px;
+        }
+        #page-3 a:hover, #page-3 a.active
+        {
+            background-position: -205px -114px;
+            left: -35px;
+        }
+        #page-4 a
+        {
+            background-position: -395px 0;
+            left: -35px;
+            width: 166px;
+        }
+        #page-4 a:hover, #page-4 a.active
+        {
+            background-position: -380px -152px;
+            left: -50px;
+        }
+        #page-5 a
+        {
+            background-position: -546px 0;
+            width: 130px;
+            left: -50px;
+        }
+        #page-5 a:hover, #page-5 a.active
+        {
+            background-position: -536px -190px;
+            left: -60px;
+        }
+        
+        #page-6 a
+        {
+            background-position: -666px 0;
+            left: -60px;
+            width: 130px;
+        }
+        #page-6 a:hover, #page-6 a.active
+        {
+            background-position: -656px -228px;
+            left: -70px;
+        }
+        #start-img
+        {
+            outline: 0;
+            position: absolute;
+            top: 0;
+            z-index: 0;
+        }
+        #videoBlocker, #flashBlocker
+        {
+            z-index: 2;
+            height: 495px;
+        }
+        #flashBlocker
+        {
+            height: 446px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body id="hero">
+    <a id="start-img" href="#">
+        <img border="0" src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_0.jpg" /></a>
+    <ul class='nook-features'>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_1.jpg" />
+        </li>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_2.jpg" />
+        </li>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_3.jpg" />
+        </li>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_4.jpg" />
+        </li>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_5.jpg" />
+        </li>
+        <li>
+            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_6.jpg" />
+        </li>
+    </ul>
+    <a id="watch-video" style="" href="#" onclick="showVideoDemo();return false;">
+        <img border='0' alt="Play Video" src="http://images.barnesandnoble.com/pimages/bravo/intro/watchvideo.jpg" /></a>
+    <div id='videoBlocker'>
+    </div>
+    <div id='flashBlocker'>
+    </div>
+    <div id='feedroomWrap'>
+        <a href='#' id='feedroomCloseBtn'></a>
+        <div id='feedroomPlayer'>
+        </div>
+    </div>
+    <script type="text/javascript">        $('.nook-features').rotatefade({ autorotate: false, callback: function () {
+            $('.pod-1').hide();
+            $('#page-1').find('a').removeClass();
+        }
+        });
+        $('#start-img').click(function () {
+            $('#page-1').find('a').click();
+            return false;
+        })
+    </script>
+</body>
+</html>
