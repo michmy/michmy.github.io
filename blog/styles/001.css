@@ -1,0 +1,49 @@
+body { font: 70% Trebuchet MS, Trebuchet, Arial, Helvetica, sans-serif; padding: 0; margin: 0 0 20px; background: #FFF3C0; }
+
+h1, h2, h3 { margin: 0; padding: 0; font-weight: lighter; color: #c63; text-transform: uppercase; }
+
+h1 {
+	font: bold 220% georgia, times, Times New Roman, times-roman,  serif; 
+	text-transform: capitalize;
+	color: #fc0;
+	letter-spacing: -1px;
+	padding: 20px 20px 0;
+}
+
+
+h2 { margin-top: 20px; font-size: 120%; }
+h3 { margin: 10px 0; font-size: 110% }
+
+
+a { color: #933; text-decoration: none; } 
+a:hover { color: #c63; text-decoration: underline; }
+
+#container { margin: 0 50px; width: 40%; border: 5px solid #fc0; border-width: 0 5px 5px; background: #fff; }
+
+#content { padding: 20px; }
+
+#menu { float: right; margin-top: -40px; }
+
+#menu ul { margin: 0 20px 20px; padding: 0; list-style-type: none; font: 160% Arial, sans-serif; text-transform: uppercase; text-align: right; letter-spacing: 1px; } 
+#menu ul li { padding-bottom: 2px; }
+#menu li a:hover { text-decoration: none; } 
+
+#menu #etc { margin: 0; padding: 0 20px; text-align: right; }
+#menu #etc ol { margin: 0; padding: 0; list-style: none; }
+
+#content ul { list-style: disc; color: #c63; margin: 0 0 0 20px; }
+
+#content p { margin: 5px 0 10px; }
+
+#footer { text-align: center; margin-bottom: 20px; }
+#flavors { display: block; }
+
+code { font-size: 120% }
+
+img.thumbnail { margin: 0 10px 10px 0; float: left; border: 1px solid #000 }
+
+.spacer { clear: both; }
+
+div.gallery { width: 60%; }
+div.gallery img { border: 1px solid #ccc; margin: 0 10px 10px 0; }
+div.gallery a:hover img { border: 1px solid #000; }

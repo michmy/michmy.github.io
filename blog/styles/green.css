@@ -1,0 +1,118 @@
+body
+{
+	font: 11px/20px Arial, sans-serif;
+	background: #fff;
+	margin: 20px;
+	padding: 0px;
+}
+
+h1, h2, h3 { font-family: Georgia, serif; color: #9ca;  }
+
+h1 
+{
+	font-size: 24px;
+	padding: 10px 0;
+}
+
+h2 
+{
+	font-size: 18px; 
+	padding: 0; 
+	margin: 15px 0 10px; 
+	text-align: right;
+	color: #ac9;
+}
+
+h3 { color: #ac9; }
+
+a:link, a:visited 
+{
+	font-weight: bold;
+	text-align: left;
+	text-decoration: none;
+	color: #9ca;
+}
+
+a:hover
+{
+	text-decoration: none;
+	color: #369;
+}
+a:active
+{
+	color: #000;
+}
+
+#container
+{
+	width: 600px;
+	margin: 0;
+	padding: 0;
+}
+
+#content
+{
+	padding: 20px;
+	width: 460px;
+	border: 1px solid #9ca;
+	text-align: justify;
+}
+
+#menu
+{
+	float: right;
+	width: 80px;
+	margin-top: -5px;
+	line-height: normal;
+}
+
+#menu ul, #menu li
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+#menu ul li a
+{
+	display: block;
+	width: 70px;
+	color: #ac9;
+	border: 1px solid #9ca;
+	border-width: 1px 5px 1px 1px;
+	text-decoration: none;
+	text-align: left;
+	margin:  5px 0;
+	padding: 1px 5px 1px 1px;
+	text-align: right;
+}
+
+#menu ul li a:hover
+{
+	border-right: 5px solid #369;
+}
+
+#etc 
+{
+	margin: 10px 0 0; 
+	text-align: right; 	
+ }
+#etc ol { margin: 0; padding: 0; list-style: none; }
+
+#etc a
+{
+	font-weight: normal;
+}
+
+#footer { margin-top: 10px; }
+
+img.thumbnail { margin: 0 10px 10px 0; float: left; border: 1px solid #000 }
+
+.spacer { clear: both; }
+
+#content ul { margin: 5px 0; padding: 0; list-style: none; }
+
+div.gallery { width: 400px; }
+div.gallery img { border: 1px solid #ccc; margin: 0 10px 10px 0; }
+div.gallery a:hover { background: none; }
+div.gallery a:hover img { border: 1px solid #000; }
