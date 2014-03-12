@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Untitled Page</title>
+    <style>
+        #scaler
+        {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        #scaler .holder
+        {
+            text-align: center;
+            background: #51c4d4;
+            color: #FFFFFF;
+            font-family: 'ProximaNova' , Arial, sans-serif;
+            border-radius: 3px;
+            webkit-border-radius: 3px;
+            font-size: 15px;
+            padding: 15px 80px 15px 80px;
+            margin-top: 30px;
+            z-index: 999;
+            width: 642px;
+            max-width: 692px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        #scaler .holder img
+        {
+            margin-left: 8px;
+            margin-right: 8px;
+            cursor: pointer;
+            opacity: 0.5;
+        }
+        
+        #scaler .holder img.active, #scaler .holder img:hover
+        {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="scaler">
+        <div class="holder">
+            <img src="images/icon1.png" id="desktop_scale" class="active" />
+            <img src="images/icon2.png" id="tablet_scale" />
+            <img src="images/icon3.png" id="mobile_scale" />
+        </div>
+    </div>
+    <center>
+        <iframe src="email.html" id="tc_central" style="border: 0; width: 800px;
+            height: 2500px;overflow:hidden"></iframe>
+    </center>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(document).on("click", '#mobile_scale', function (e) {
+            $('#scaler img').removeClass('active');
+            $(this).addClass('active');
+            $('#tc_central').css({ 'width': '400px', 'max-width': '400px' });
+            $('#scaler .holder').css({ 'width': '242px', 'max-width': '242px' })
+        });
+
+        $(document).on("click", '#tablet_scale', function (e) {
+            $('#scaler img').removeClass('active');
+            $(this).addClass('active');
+            $('#tc_central').css({ 'width': '600px', 'max-width': '600px' });
+            $('#scaler .holder').css({ 'width': '442px', 'max-width': '442px' });
+        });
+
+        $(document).on("click", '#desktop_scale', function (e) {
+            $('#scaler img').removeClass('active');
+            $(this).addClass('active');
+            $('#tc_central').css({ 'width': '800px', 'max-width': '800px' });
+            $('#scaler .holder').css({ 'width': '642px', 'max-width': '642px' });
+        });
+    </script>
+</body>
+</html>
