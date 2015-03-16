@@ -355,7 +355,6 @@ p {
 
 #portfolio .item {
 	display: none;
-	opacity: 0;
 	padding: 0px 10px;
 	width: 33.3333%;
 	vertical-align: top;
@@ -549,7 +548,6 @@ p {
 
 footer {
 	background: #f1f1f1;
-	height: 70px;
 	padding: 20px 30px;
 	position: relative;
 	z-index: 99;
@@ -558,6 +556,7 @@ footer {
 footer p {
 	color: #000000;
 	font-size: 14px;
+    margin: 0;
 }
 
 .social {

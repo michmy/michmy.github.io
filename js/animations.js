@@ -18,6 +18,7 @@ $(window).scroll(function() {
 	});
 });
 
+/*
 $(window).scroll(function() {
 	$('.personal-info').each(function(){
 	var imagePos = $(this).offset().top;
@@ -37,6 +38,7 @@ $(window).scroll(function() {
 		}
 	});
 });	
+*/
 
 $(window).scroll(function() {
 	$('.page-head').each(function(){
@@ -48,6 +50,7 @@ $(window).scroll(function() {
 	});
 });	
 
+/*
 $(window).scroll(function() {
 	$('.resume-info').each(function(){
 	var imagePos = $(this).offset().top;
@@ -57,33 +60,4 @@ $(window).scroll(function() {
 		}
 	});
 });	
-
-$(window).scroll(function() {
-	$('.services-info li').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("animated flipInX");
-		}
-	});
-});	
-
-$(window).scroll(function() {
-	$('article').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("animated flipInX");
-		}
-	});
-});	
-
-$(window).scroll(function() {
-	$('.contact-form').each(function(){
-	var imagePos = $(this).offset().top;
-	var topOfWindow = $(window).scrollTop();
-		if (imagePos < topOfWindow+500) {
-			$(this).addClass("animated fadeInUp");
-		}
-	});
-});	
+*/

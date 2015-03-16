@@ -33,6 +33,7 @@ jQuery(document).ready(function($) {
 });
 
 /* Skills */
+/*
 jQuery(document).ready(function($) {
 	"use strict";
 	$('.skills-info').appear(function() {
@@ -43,4 +44,5 @@ jQuery(document).ready(function($) {
 	$('.skill5').css('width', '69%');
 	},{accX: 0, accY: -150});
 });
+*/
 
