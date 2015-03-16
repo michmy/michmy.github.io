@@ -1,116 +1,393 @@
 ﻿<!DOCTYPE html>
+<!--[if IE 8]>			<html class="ie ie8"> <![endif]-->
+<!--[if IE 9]>			<html class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->
 <html>
+<!--<![endif]-->
 <head>
-    <meta name="description" content="Michelle Yang, a front end web developer, personal portfolio">
-    <meta name="keywords" content="Michelle Yang, a front end web developer, personal portfolio">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michelle Yang - a Front End Web Developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet'
-        type='text/css'>
-    <style>
-        body
-        {
-            font: 16px 'Open Sans' , Verdana, sans-serif;
-            line-height: 1.5;
-        }
-        
-        /* nutrition box */
-        #nutri-info
-        {
-            border: 1px solid #000;
-            color: #333;
-            padding: 10px;
-            margin: 20px;
-        }
-        #nutri-info p
-        {
-            margin: 0;
-            font-size: 0.8em;
-        }
-        
-        .my-name
-        {
-            font-size: 1.5em;
-            font-weight: 700;
-            padding: 0;
-            margin: 0;
-        }
-        .my-title
-        {
-            font-size: 0.9em;
-            padding: 0 0 6px 0;
-            margin: 0;
-        }
-        
-        .info
-        {
-            border-top: 5px solid #000;
-            border-bottom: 2px solid #000;
-            margin: 10px 0;
-            padding: 0;
-            list-style: none;
-            font-size: 0.9em;
-        }
-        .info li
-        {
-            border-bottom: 1px solid #000;
-            margin: 0;
-            padding: 8px 0;
-        }
-        
-        .projects
-        {
-            overflow: auto;
-            font-size: 0.9em;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .projects a:link, .projects a:active, .projects a:visited
-        {
-            color: #ff6347;
-            text-decoration: none;
-            text-decoration: underline;
-        }
-        .projects a:after
-        {
-            content: " \00bb";
-        }
-        .projects a:hover
-        {
-            text-decoration: none;
-        }
-        
-        @media screen and (min-width : 980px)
-        {
-            #nutri-info
-            {
-                width: 300px;
-            }
-        }
-    </style>
+
+    <!-- Meta -->
+    <meta charset="utf-8">
+
+    <title>Michelle Yang -- Front End Developer</title>
+
+    <!-- Mobile Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144.png">
+
+    <!-- Google Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,700italic,600italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Neuton:400,200,300' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+    <script src="/js/libs/respond.min.js"></script>
+    <![endif]-->
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme Styles CSS-->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!--[if lt IE 9]>
+    <script src="/js/libs/html5.js"></script>
+    <![endif]-->
+
+
 </head>
 <body>
-    <div id="nutri-info">
-        <h1 class="my-name">
-            Michelle Yang</h1>
-        <h2 class="my-title">
-            Front-End Web Developer</h2>
-        <p>
-            Serving Size: 1</p>
-        <p>
-            Calories: 115</p>
-        <p>
-            <strong>Amount Per Serving</strong></p>
-        <ul class="info">
-            <li><strong>Skills:</strong> HTML, CSS, XML/XSL, JavaScript</li>
-            <li><strong>Passion:</strong> Web standards, well-written markup and clean code</li>
-            <li><strong>Responsibilities:</strong> Front-end development, write semantic HTML and
-                cross-browser-compatible CSS</li>
-        </ul>
-        <ul class="projects">
-            <li><a href="work.html">Portfolio</a></li>
-        </ul>
+
+    <!-- LOADING MASK -->
+    <div id="mask">
+        <div class="loader">
+            <img src="images/loading.gif" alt='loading'>
+        </div>
     </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
+        <div class="container no-padding">
+            <div class="row" style="background:#2c383c">
+                <div class="col-md-3 l-content">
+
+                    <nav>
+                        <ul class="navigation">
+                            <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                            <li><a href="#"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                            <!--li><a href="#"><i class="fa fa-file-text"></i> Resume</a></li-->
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-9 r-content">
+                    <div class="flexslider">
+                        <div class="slides">
+                            <!-- SECTION 1 - HOMEPAGE -->
+                            <section class="no-display">
+                                <div class="profile" id="1">
+                                    <h2>Hello, my name is <span>Michelle Yang</span><br>I am a Front-End Developer</h2>
+                                    <div class="sep1"></div>
+                                    <p>
+                                        I have over ten years of experience in front-end development. I write semantic HTML and cross-browser-compatible CSS. I have a passion for web standards, well-written markup and clean code. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.
+                                    </p>
+                                    <div class="personal-info col-md-12 no-padding">
+                                        <h4>Personal Info</h4>
+                                        <div class="sep2"></div>
+                                        <ul>
+
+
+                                            <li>
+                                                <div class="p-info"><em>e-mail</em><span><a href="mailto:michmy@gmail.com">michmy@gmail.com</a></span></div>
+                                            </li>
+
+                                            <li>
+                                                <div class="p-info"><em>phone</em><span>917-292-5603</span></div>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </section>
+                            <!-- SECTION 1 - HOMEPAGE -->
+                            <!-- SECTION 2 - WORKS / PROJECTS / PORTFOLIO -->
+                            <section class="no-display">
+                                <div class="works" id="2">
+                                    <div class="page-head">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>Portfolio</h3>
+                                            </div>
+                                            <!--div class="col-md-7">
+                                                <div class="np-main">
+                                                    <p>Go to next/previous page</p>
+                                                    <div class="np-controls">
+                                                        <a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a>
+                                                        <a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div-->
+                                        </div>
+                                    </div>
+                                    <div class="portfolio-wrap">
+                                        <div class="row">
+                                            <ul id="filter-list" class="clearfix">
+                                                <li class="filter" data-filter="all"><i class="fa fa-th"></i> All</li>
+                                                <li class="filter" data-filter="email">Emails</li>
+                                                <li class="filter" data-filter="responsive">Responsive Design</li>
+                                                <li class="filter" data-filter="web">HTML/CSS</li>
+                                                <li class="filter" data-filter="javascript">JavaScript</li>
+                                                
+                                            </ul>
+                                            <ul id="portfolio">
+                                                <li class="item col-md-4 email responsive">
+                                                    <a href="/work/ow/responsive/scaler.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/ow-email.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>Responsive Emails</h4>
+                                                        <p>Used table layout with media queries</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 responsive">
+                                                    <a href="/work/ow/landing/landing.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/ow-landing.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>Responsive Design</h4>
+                                                        <p>Converted website to scale in small screens</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 web">
+                                                    <a href="/kylie/index.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/kh-birth.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>Birth Annoucement</h4>
+                                                        <p>Used HTML/CSS/JS</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 javascript">
+                                                    <a href="/work/bn/rotatefade.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-rotator.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>jQuery Image Slider Plug-in</h4>
+                                                        <p>Coded custom slider to fade in/out images</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 javascript">
+                                                    <a href="/work/bn/hgg.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-dropdown.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>jQuery Dropdown Plug-in</h4>
+                                                        <p>Coded dropdown to have custom UI</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 javascript">
+                                                    <a href="/work/bn/nook.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-nook.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>jQuery Image Slider</h4>
+                                                        <p>Refactored plug-in to allow more options</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 javascript web">
+                                                    <a href="/work/bn/kirkus.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-poll.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>Custom Poll</h4>
+                                                        <p>Built custom voting page</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 web">
+                                                    
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-grid.png" alt="" class="img-responsive" style="margin-bottom:10px;">
+                                                            
+                                                        </div>
+                                                    
+                                                    <div class="folio-desc">
+                                                        <h4>CSS Grids</h4>
+                                                        <p>Implemented custom CSS grid framework</p>
+                                                    </div>
+                                                </li>
+                                                <li class="item col-md-4 web">
+                                                    <a href="/work/bn/gallery.html">
+                                                        <div class="folio-img">
+                                                            <img src="images/projects/bn-gallery.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <div class="folio-desc">
+                                                        <h4>Image Gallery Slideshow</h4>
+                                                        <p>Incorporated carousel and slideshow</p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </section>
+                            <!-- SECTION 2 - WORKS / PROJECTS / PORTFOLIO -->
+                            <!-- SECTION 3 - CV / RESUME -->
+                            <section class="no-display">
+                                <div class="item resume" id="3">
+                                    <div class="page-head">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <h3>Resume</h3>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="np-main">
+                                                    <p>Go to next/previous page</p>
+                                                    <div class="np-controls">
+                                                        <a href="#" class="previous"><i class="fa fa-arrow-circle-left"></i></a>
+                                                        <a href="#" class="next"><i class="fa fa-arrow-circle-right"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="resume-info">
+                                        <h4>Work Experience</h4>
+                                        <div class="sep2"></div>
+                                        <ul>
+                                            <li>
+                                                <h5>Graphic River</h5>
+                                                <span class="year"><i class="fa fa-calendar"></i> 2001 - 2004</span>
+                                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                                            </li>
+                                            <li>
+                                                <h5>Video Hive</h5>
+                                                <span class="year"><i class="fa fa-calendar"></i> 2005 - 2008</span>
+                                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                                            </li>
+                                            <li>
+                                                <h5>Themeforest</h5>
+                                                <span class="year"><i class="fa fa-calendar"></i> 2009 - 2014</span>
+                                                <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="resume-info">
+                                        <h4>Education</h4>
+                                        <div class="sep2"></div>
+                                        <ul>
+                                            <li>
+                                                <h5>Polytechnic University</h5>
+                                                <span class="year"><i class="fa fa-calendar"></i> 1999 - 2003</span>
+                                                <p>Bachelor of Science in Computer Science</p>
+                                            </li>
+
+                                        </ul>
+                                    </div>
+                                    <div class="skills-info">
+                                        <h4>Skills</h4>
+                                        <div class="sep2"></div>
+                                        <ul>
+                                            <li>
+                                                <p>Wordpress Development <span>71%</span></p>
+                                                <div class="skills-bg"><span class="skill1"></span></div>
+                                            </li>
+                                            <li>
+                                                <p>Photoshop <span>85%</span></p>
+                                                <div class="skills-bg"><span class="skill2"></span></div>
+                                            </li>
+                                            <li>
+                                                <p>HTML5/CSS3 <span>76%</span></p>
+                                                <div class="skills-bg"><span class="skill3"></span></div>
+                                            </li>
+                                            <li>
+                                                <p>Ruby on Rails <span>53%</span></p>
+                                                <div class="skills-bg"><span class="skill4"></span></div>
+                                            </li>
+                                            <li>
+                                                <p>Social Marketing <span>69%</span></p>
+                                                <div class="skills-bg"><span class="skill5"></span></div>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                </div>
+                            </section>
+                            <!-- SECTION 3 - CV / RESUME -->
+
+
+                        </div>
+                    </div>
+
+                    <!-- FOOTER -->
+                    <footer>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>&copy; 2015 Michelle Yang. All Rights Reserved</p>
+                            </div>
+                           
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTENT -->
+    <!-- JavaScript -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.mixitup.min.js"></script>
+    
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/jquery.inview.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+
+
 </body>
 </html>
