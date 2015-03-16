@@ -843,9 +843,11 @@ footer {
 	width: 50%;
 }
 
-#portfolio .item {
-	width: 49%;
 }
 
+@media only screen and (min-width: 480px) and (max-width: 980px) {
+    #portfolio .item {
+	    width: 49%;
+    }
 }
 
