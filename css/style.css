@@ -120,7 +120,7 @@ p {
 	display: table;
 	width: 100%;
 	text-align: right;
-	font-size: 30px;
+	font-size: 25px;
 	color: #d1d1d1;
 	position: relative;
 }
@@ -355,6 +355,7 @@ p {
 
 #portfolio .item {
 	display: none;
+	opacity: 0;
 	padding: 0px 10px;
 	width: 33.3333%;
 	vertical-align: top;
