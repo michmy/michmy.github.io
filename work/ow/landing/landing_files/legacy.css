@@ -1,15 +1,5 @@
-﻿@import "jquery-ui.css";
-@import "jquery.fancybox-1.3.4.css";
-@import "jquery.dropdownchecklist.1.0.css";
-@import "timepicker.css";
-@import "bulkactions.css";
-@import "guidedFilters.css";
-@import "chosen.css";
-@import "jScrollPane.css";
-@import "tabs_ajax.css";
-@import "tabs.css";
-@import "mvccontribgrid.css";
-/* OneWire Theme Colors *//* Other Colors *//* Typography *//* Handy Mixins */.upload-img-wrapper {
+﻿/* OneWire Theme Colors *//* Other Colors *//* Typography *//* Handy Mixins */
+.upload-img-wrapper {
   width: 10px;
   position: relative;
   border: solid 3px transparent;

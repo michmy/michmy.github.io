@@ -15,13 +15,7 @@ Version:	1.0
 	7. Resume
 		7.1. Skills Info 
 		7.2. Services 
-	8. Blog
-	9. Contact
-		9.1. Map Styles
-		9.2. Contact Info
-
 	10. Footer
-	11. Blog - Single Post
 
 -------------------------------------------------------------------*/
 
@@ -29,23 +23,14 @@ Version:	1.0
 		          1. GLOBAL STYLES
 --------------------------------------------------------------- */
 
-body, html {
-	height: 100%;
-	width: 100%;
-}
 
 body {
 	background: #d9dbdd;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-weight: 700;
 }
 
 p {
@@ -53,6 +38,7 @@ p {
 	font-weight: 400;
 	color: #828282;
 }
+
 
 
 .no-padding {
@@ -123,6 +109,7 @@ p {
 	font-size: 20px;
 	color: #d1d1d1;
 	position: relative;
+    text-decoration: none;
 }
 
 .navigation li a i {
@@ -143,7 +130,7 @@ p {
 	width: 0%;
 	height: 100%;
 	right: 0px;
-	background: #ffd42d;
+	background: #F1678D;
 	-webkit-transition: all .3s ease-in-out;
 	-moz-transition: all .3s ease-in-out;
 	-o-transition: all .3s ease-in-out;
@@ -167,14 +154,14 @@ p {
 .sep1 {
 	height: 3px;
 	width: 70px;
-	background: #ffd42d;
+	background: #F1678D;
 	margin: 20px 0;
 }
 
 .sep2 {
 	height: 6px;
 	width: 50px;
-	background: #ffd42d;
+	background: #F1678D;
 	margin: 20px 0;
 }
 
@@ -205,7 +192,7 @@ p {
 }
 
 .np-controls a:hover i {
-	color: #ffd42d;
+	color: #F1678D;
 }
 
 .np-main {
@@ -271,38 +258,6 @@ p {
 	font-weight: 300;
 }
 
-.personal-info ul {
-	padding: 0px;
-}
-
-.personal-info li {
-	list-style: none;
-	margin-bottom: 20px;
-	height: 43px;
-	border: 1px solid #ededed;
-	overflow: hidden;
-        background: #f6f6f6
-
-}
-
-.personal-info li em {
-	padding: 0 15px;
-	line-height: 43px;
-	font-size: 16px;
-	color: #9b9b9b;
-	font-weight: 400;
-	font-style: normal;
-}
-
-.personal-info li span {
-	padding: 11px 15px;
-	line-height: 42px;
-	font-size: 16px;
-	color: #484848;
-	font-weight: 400;
-	border-left: 1px solid #ededed;
-}
-
 /*-------------------------------------------- 
                 6. PORTFOLIO
 ---------------------------------------------- */
@@ -336,14 +291,9 @@ p {
 	color: #b1b1b1;
 }
 
-#filter-list li:hover {
-	background: #ffd42d;
-	color: #2c383c;
-}
-
-#filter-list li.active {
-	background: #ffd42d;
-	color: #2c383c;
+#filter-list li:hover, #filter-list li.active  {
+	background: #F1678D;
+	color: #fff;
 }
 
 #portfolio {
@@ -526,7 +476,7 @@ p {
 }
 
 .skills-bg span {
-	background: #ffd42d;
+	background: #F1678D;
 	height: 20px;
 	display: table;
 	position: absolute;
@@ -555,122 +505,9 @@ footer {
 }
 
 footer p {
-	color: #000000;
+	color: #000;
 	font-size: 14px;
     margin: 0;
-}
-
-.social {
-	padding: 0px;
-	display: table;
-	float: right;
-}
-
-.social li {
-	float: left;
-	list-style: none;
-	margin-left: 15px;
-}
-
-.social li a {
-	font-size: 19px;
-	color: #2b373b;
-}
-
-.social li a:hover {
-	color: #ffd42d;
-}
-
-/*-------------------------------------------- 
-               11. BLOG - SINGLE POST
----------------------------------------------- */
-
-.blog-single p {
-	margin-bottom: 17px;
-}
-
-.blog-single-img {
-	margin-bottom: 25px;
-}
-
-.comment-avatar {
-	width: 80px;
-	height: 80px;
-	float: left;
-	border: 1px solid #dcdcdc;
-	padding: 8px;
-	border-radius: 6px;
-}
-
-.comments-wrap ul {
-	padding: 0px;
-}
-
-.comments-wrap ul li {
-	list-style: none;
-	display: table;
-	width: 100%;
-	margin-bottom: 25px;
-	padding-bottom: 25px;
-	border-bottom: 1px solid #f2f2f2;
-}
-
-.comment-info {
-	margin-left: 97px;
-}
-
-.comment-info h6 {
-	color: #3c3c3c;
-	font-weight: 400;
-	font-size: 14px;
-	margin: 0px;
-}
-
-.comment-info h6 span {
-	color: #b8b8b8;
-	font-weight: 400;
-	font-size: 11px;
-	padding-left: 5px;
-}
-
-.comment-info p {
-	color: #868686;
-	font-size: 13px;
-	margin: 0px 0px 4px;
-}
-
-.reply {
-	width: 42px;
-	height: 22px;
-	border-radius: 4px;
-	color: #2b373b;
-	font-size: 11px;
-	line-height: 20px;
-	text-align: center;
-	background: #ffd42d;
-	display: table;
-}
-
-.reply:hover {
-	color: #ffd42d;
-	background: #222;
-}
-
-.sub-comment {
-	width: 85% !important;
-	float: right;
-}
-
-.sub-sub-comment {
-	width: 70% !important;
-	float: right;
-}
-
-.blog-single h4 {
-	color: #2c383c;
-	margin: 0px 0px 30px;
-	font-size: 24px;
-	font-weight: 300;
 }
 
 /*-------------------------------------------- 
@@ -693,6 +530,157 @@ footer p {
 	margin: -20px 0 0 -20px;
 	top: 50%;
 	left: 50%;
+}
+
+/*----------------------
+---- Project Viewer ----
+-----------------------*/
+
+#project-viewer{
+	background: rgba(255,255,255,0.95);
+	background-attachment: fixed;
+	background-size: 100%;
+	background-size: cover;
+}
+
+#project-viewer .container{
+	display: none;
+}
+
+#close-project-viewer{
+	position: absolute;
+	padding:0 20px;
+	right:20px;
+	top:20px;
+	font-size: 98px;
+	line-height: 78px;
+	font-weight: 100;
+	cursor: pointer;
+	-webkit-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+}
+
+#close-project-viewer:hover{
+	color: #F1678D;
+}
+
+#project-viewer-content {
+	padding-top: 50px;
+	z-index: 999;
+}
+
+#project-viewer-content img {
+    max-width: 100%;
+}
+
+#project-viewer-content .project-title{
+	position: relative;
+	margin-top: 0;
+	font-size: 52px;
+	font-weight: 400;
+	color: #39444C;
+	text-align: center;
+}
+
+#project-viewer-content .project-title span{
+	position: relative;
+	left:5px;
+	font-size:24px;
+	font-weight: 400;
+	color: #F1678D;
+}
+
+#project-viewer-content .project-title + .project-subtitle{
+	font-size: 19px;
+	text-align: center;
+    margin-bottom: 40px;
+}
+
+#project-viewer-content .project-media{
+	margin-bottom: 70px;
+}
+
+#project-viewer-content .project-media.video-container{
+	background: url(../images/video-loader.gif) center center no-repeat;
+	background-color: #000;
+}
+
+.project-slider .flex-control-nav {bottom: -50px;}
+.project-slider .flex-control-nav li {margin: 0 4px;}
+.project-slider .flex-control-paging li a {width:10px; height:10px; margin:2px 0;background: #F1678D;box-shadow:none; border: none; opacity: 1;}
+.project-slider .flex-control-paging li a:hover { }
+.project-slider .flex-control-paging li a.flex-active { width:14px; height:14px;background: transparent;border: 2px solid #F1678D;}
+
+
+#project-viewer-footer{
+	position: relative;
+	margin-top: 20px;
+	padding: 0 0 70px;
+	text-align: center;
+}
+
+#project-viewer-footer .project-nav{
+	position: relative;
+	padding: 30px 0;
+	border-top:1px solid #c4c8cb;
+	border-bottom:1px solid #c4c8cb;
+}
+
+#project-viewer-footer .project-nav span{
+	padding:0 5px;
+	font-size: 24px;
+	cursor: pointer;
+	-webkit-transition: color .15s ease-out;
+	transition: color .15s ease-out;
+}
+
+#project-viewer-footer .project-nav span:hover{
+	color:#F1678D;
+}
+
+#project-viewer-footer .project-nav .previous-project{
+	position: absolute;
+	left:50%;
+	margin-left:-114px;
+}
+
+#project-viewer-footer .project-nav .next-project{
+	position: absolute;
+	left:50%;
+	margin-left:80px;
+}
+
+#scaler {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#scaler .holder {
+    text-align: center;
+    background: #F1678D;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    border-radius: 3px;
+    webkit-border-radius: 3px;
+    font-size: 15px;
+    padding: 15px 80px 15px 80px;
+    margin-top: 30px;
+    z-index: 999;
+    width: 642px;
+    max-width: 692px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#scaler .holder img {
+    margin-left: 8px;
+    margin-right: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#scaler .holder img.active, #scaler .holder img:hover {
+    opacity: 1;
 }
 
 /* #Tablet (Portrait)
@@ -763,18 +751,6 @@ footer p {
 	color: #d1d1d1;
 }
 
-.profile-pic {
-	background-size: 100% auto;
-}
-
-.personal-info li em {
-	font-size: 13px;
-}
-
-.personal-info li span {
-	font-size: 13px;
-}
-
 #portfolio .item {
 	width: 100%;
 }
@@ -796,27 +772,8 @@ footer p {
 	text-align: center;
 }
 
-.social {
-	padding: 0px;
-	display: table;
-	float: none;
-	margin: 0 auto;
-}
-
 .flexslider {
 	min-height: auto;
-}
-
-footer {
-	height: 100px;
-}
-
-.sub-comment {
-	width: 95% !important;
-}
-
-.sub-sub-comment {
-	width: 90% !important;
 }
 
 }
@@ -851,3 +808,22 @@ footer {
     }
 }
 
+@media only screen and (max-width: 767px) {
+    #close-project-viewer{
+		padding:0 10px;
+		right:50%;
+		margin-right: -38px;
+		top:15px;
+		font-size: 76px;
+		line-height: 58px;
+	}
+
+	#project-viewer-content .project-title{
+		font-size: 32px;
+        margin-top: 30px;
+	}
+
+	#project-viewer-content .project-title span{
+		font-size:18px;
+	}
+}

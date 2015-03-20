@@ -20,7 +20,7 @@
 
     
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Theme Styles CSS-->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -70,21 +70,41 @@
                                     <p>
                                         I have over ten years of experience in front-end development. I write semantic HTML and cross-browser-compatible CSS. I have a passion for web standards, well-written markup and clean code. I have a reasonable grasp of using JavaScript frameworks, specifically jQuery.
                                     </p>
+
+                                   
+
                                     <div class="personal-info col-md-12 no-padding">
-                                        <h4>Personal Info</h4>
-                                        <div class="sep2"></div>
-                                        <ul>
 
+                                        <div class="col-sm-4 col-md-4 no-padding">
+                                            <h4>Key skills</h4>
+                                            <div class="sep1"></div>
+                                            <ul>
+                                                <li>HTML/CSS/LESS</li>
+                                                <li>Responsive Design</li>
+                                                <li>jQuery/Javascript</li>
+                                            </ul>
+                                        </div>
 
-                                            <li>
-                                                <div class="p-info"><em>e-mail</em><span><a href="mailto:michmy@gmail.com">michmy@gmail.com</a></span></div>
-                                            </li>
+                                        <div class="col-sm-4 col-md-4 no-padding">
+                                            <h4>Experience with</h4>
+                                            <div class="sep1"></div>
+                                            <ul>
+                                                <li>ASP.NET MVC</li>
+                                                <li>Knockout JS</li>
+                                                <li>Wordpress</li>
+                                            </ul>
+                                        </div>
 
-                                            <li>
-                                                <div class="p-info"><em>phone</em><span>917-292-5603</span></div>
-                                            </li>
-
-                                        </ul>
+                                        <div class="col-sm-4 col-md-4 no-padding">
+                                            <h4>Methodologies</h4>
+                                            <div class="sep1"></div>
+                                            <ul>
+                                                <li>OOCSS</li>
+                                                <li>SMACSS</li>
+                                                <li>BEM</li>
+                                            </ul>
+                                        </div>
+                                        
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -112,7 +132,7 @@
                                     <div class="portfolio-wrap">
                                         <div class="row">
                                             <ul id="filter-list" class="clearfix">
-                                                <li class="filter" data-filter="all"><i class="fa fa-th"></i> All</li>
+                                                <li class="filter" data-filter="all"><i class="fa fa-th-large"></i> All</li>
                                                 <li class="filter" data-filter="email">Emails</li>
                                                 <li class="filter" data-filter="responsive">Responsive Design</li>
                                                 <li class="filter" data-filter="web">HTML/CSS</li>
@@ -120,8 +140,8 @@
                                                 
                                             </ul>
                                             <ul id="portfolio">
-                                                <li class="item col-md-4  email responsive">
-                                                    <a href="/work/ow/responsive/scaler.html" target="_blank">
+                                                <li class="item col-md-4 email responsive">
+                                                    <a href="/work/ow/responsive/scaler.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/ow-email.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -137,7 +157,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="item col-md-4  responsive">
-                                                    <a href="/work/ow/landing/landing.html" target="_blank">
+                                                    <a href="/work/ow/landing/scaler.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/ow-landing.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -152,8 +172,10 @@
                                                         <p>Converted website to scale in small screens</p>
                                                     </div>
                                                 </li>
+
+                                                
                                                 <li class="item col-md-4 web">
-                                                    <a href="/kylie/index.html" target="_blank">
+                                                    <a href="/kylie/index.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/kh-birth.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -169,7 +191,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="item col-md-4 javascript">
-                                                    <a href="/work/bn/rotatefade.html" target="_blank">
+                                                    <a href="/work/bn/rotatefade.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/bn-rotator.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -185,7 +207,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="item col-md-4 javascript">
-                                                    <a href="/work/bn/hgg.html" target="_blank">
+                                                    <a href="/work/bn/hgg.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/bn-dropdown.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -201,7 +223,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="item col-md-4 javascript">
-                                                    <a href="/work/bn/nook.html" target="_blank">
+                                                    <a href="/work/bn/nook.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/bn-nook.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -217,7 +239,7 @@
                                                     </div>
                                                 </li>
                                                 <li class="item col-md-4 javascript web">
-                                                    <a href="/work/bn/kirkus.html" target="_blank">
+                                                    <a href="/work/bn/kirkus.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/bn-poll.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -234,18 +256,27 @@
                                                 </li>
                                                 <li class="item col-md-4 web">
                                                     
+                                                    <a href="/work/bn/grids.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
-                                                            <img src="images/projects/bn-grid.png" alt="" class="img-responsive" style="margin-bottom:10px;">
-                                                            
+                                                            <img src="images/projects/bn-grid.png" alt="" class="img-responsive">
+                                                            <div class="overlay">
+                                                                <div class="overlay-inner">
+                                                                    <i class="fa fa-search-plus text-dark"></i>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                    
+                                                    </a>
                                                     <div class="folio-desc">
                                                         <h4>CSS Grids</h4>
                                                         <p>Implemented custom CSS grid framework</p>
                                                     </div>
+
+                                                        
+                                                    
+                                                    
                                                 </li>
                                                 <li class="item col-md-4 web">
-                                                    <a href="/work/bn/gallery.html" target="_blank">
+                                                    <a href="/work/bn/gallery.html" class="project-item" target="_blank">
                                                         <div class="folio-img">
                                                             <img src="images/projects/bn-gallery.png" alt="" class="img-responsive">
                                                             <div class="overlay">
@@ -260,6 +291,7 @@
                                                         <p>Incorporated carousel and slideshow</p>
                                                     </div>
                                                 </li>
+                                                
                                             </ul>
                                         </div>
                                     </div>
@@ -268,7 +300,7 @@
                             <!-- SECTION 2 - WORKS / PROJECTS / PORTFOLIO -->
                             <!-- SECTION 3 - CV / RESUME -->
                             <section class="no-display">
-                                <div class="item resume" id="3">
+                                <div class="resume" id="3">
                                     <div class="page-head">
                                         <div class="row">
                                             <div class="col-md-5">
@@ -367,15 +399,39 @@
             </div>
         </div>
     </div>
+
+
+    <div id="project-viewer" class="modal fade">
+
+        <span id="close-project-viewer" data-dismiss="modal">&times;</span>
+
+        <div class="container">
+
+            <div id="project-viewer-content"></div>
+
+            <div id="project-viewer-footer">
+
+                <div class="project-nav">
+
+                    <span class="previous-project" data-toggle="tooltip" data-placement="bottom" title="Previous Project"><i class="fa fa-long-arrow-left"></i></span>
+                    <span class="back-to-portfolio" data-toggle="tooltip" data-placement="bottom" title="Back to Portfolio" data-dismiss="modal"><i class="fa fa-th-large"></i></span>
+                    <span class="next-project" data-toggle="tooltip" data-placement="bottom" title="Next Project"><i class="fa fa-long-arrow-right"></i></span>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div><!-- /.modal -->
+
     <!-- MAIN CONTENT -->
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.flexslider.js"></script>
-    <script src="js/jquery.easing.js"></script>
     <script src="js/jquery.mixitup.min.js"></script>    
     <script src="js/jquery.appear.js"></script>
     <script src="js/main.js"></script>
-
 
 </body>
 </html>

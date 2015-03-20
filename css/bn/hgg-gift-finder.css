@@ -1,0 +1,182 @@
+a img {border:0;}
+
+/* carousel */
+.iframe .sub-promo-wrap {float:left;width:688px;height:227px;background:url(http://images.barnesandnoble.com/pimages/holiday09/slider_bg.jpg) repeat-x scroll 0 0;}
+
+.scrollable {
+	position:relative;
+	overflow:hidden;
+	width: 590px;
+	height:185px;
+	margin-left:15px;
+	display:inline;
+	float:left;	
+    }
+.scrollable .items {
+	position:absolute;
+	list-style:none;
+	width:20000em;
+	clear:both;
+	padding:0;
+	margin:0;
+	left:0;
+    }
+.scrollable li {
+	position:relative;
+	text-align:center;
+	margin-right:30px;
+	margin-top:30px;
+	cursor:pointer;
+	width:120px;
+	float:left;
+    }
+.navi {
+	clear:both;
+    }
+.navi dl {
+    position:relative;
+    text-align:center;
+    float:left;
+    margin:0;
+    left:50%;
+    }
+.navi dl dt {
+    position:relative;
+    display:block;
+    float:left;
+    margin:3px;
+    right:50%;
+    }
+.navi dl a {
+	background:url(http://images.barnesandnoble.com/pimages/holiday09/gift_finder_navi_btns.gif) 0 0 no-repeat;
+	display:block;
+	font-size:1px;
+	width:11px;
+	height:11px;
+}
+.navi a.active {
+	background-position:0 -11px;     
+    }
+a.browse {
+    position:relative;
+    cursor:pointer;
+    display:block;
+	font-size:1px;
+	height:64px;
+    width:29px;
+	float:left;
+    top:70px;	
+    }
+a.right {
+    background:url(http://images.barnesandnoble.com/pimages/holiday09/arrow_right_maincarousel.png) no-repeat top left;
+    margin-right: 0px;
+    clear:right; 
+    }
+a.left { 
+    background:url(http://images.barnesandnoble.com/pimages/holiday09/arrow_left_maincarousel.png) no-repeat top left;
+    } 
+a.disabled {
+	visibility:hidden;		
+    } 	
+.digital-content {display:none;}
+.scrollable-see-all {clear: both; position:relative;right:15px;}
+.scrollable-see-all a {
+    background:url(http://images.barnesandnoble.com/pImages/holiday09/btn_seemore.png) no-repeat left top;
+    text-indent:-9999px;
+    position:absolute;
+    display:block;
+    height:32px;
+    width:83px;
+    top:-15px;
+    right:0;
+    }
+
+/* custom selects */
+dl.dropdown {background:url(http://images.barnesandnoble.com/pImages/holiday09/giftfinder_pulldown_lrg.gif) no-repeat top left;width:208px;height:26px;}
+dl.dropdown a {font:bold 11px Verdana;}
+dl.dropdown a.small {font-size:10px;padding-top:6px;}
+dl.dropdown dd, 
+	.dropdown dt, 
+		.dropdown ul {margin:0px; padding:0px;}
+dl.dropdown dd {position:relative;}
+dl.dropdown dt a, .dropdown dt a:visited { color:#89640b; text-decoration:none; outline:none;}
+dl.dropdown dt a {display:block; padding:5px 15px;width:178px;}
+dl.dropdown dt a span {cursor:pointer; display:block;}
+dl.dropdown dd ul {background:#fff; border:1px solid #d4ca9a;border-top:0; color:#C5C0B0; 
+                  left:0px; padding:0 0 5px; position:absolute; top:3px; width:206px; list-style:none;z-index:150}
+dl.dropdown span.value {display:none;}
+dl.dropdown dd ul li a {padding:5px 5px 5px 15px; display:block; color:#20844d;text-decoration:none;}
+dl.dropdown dd ul li a:hover {background-color:#d0c9af;text-decoration:none}
+
+ul li .rb-option {margin-right:5px;position:relative;top:2px;}
+
+/* carousel form options */
+.gift-finder-carousel {height:227px;width:980px;background:url(http://images.barnesandnoble.com/pimages/holiday09/slider_bg.jpg) no-repeat top left; margin: 0 auto;}
+.gift-finder-carousel iframe {float:left}
+.gift-finder-carousel .search-options {float:left;width:302px;height:227px;background:url(http://images.barnesandnoble.com/pimages/holiday09/Slider_head.jpg) no-repeat top left}
+.gift-finder-carousel .search-options .options {padding-left:40px;padding-top:90px;}
+.gift-finder-carousel .search-options .options ul {list-style:none;margin:0;padding:0 0 10px 30px;float:left;}
+.gift-finder-carousel .search-options .options ul li, 
+	.search-bar ul li,
+	.nav-module ul li,
+	#right-col-sub .nav-module ul li {display:inline;font:bold 14px Arial;color:#a57b17;float:left;margin-right:20px;}
+.gift-finder-carousel .search-options .options dl.dropdown dd ul {padding-bottom:5px;padding-left:0;}
+.gift-finder-carousel .search-options .options dl.dropdown dd ul li, 
+	.search-bar dl.dropdown dd ul li,
+	.nav-module dl.dropdown dd ul li  {float:none;margin:0;}
+.gift-finder-carousel .search-options .options .hgg-options {clear:both;}
+.gift-finder-carousel .search-options .options .hgg-options dl {margin:0 0 10px;}
+
+/* gift suggestions */
+.search-bar {
+	background:url(http://images.barnesandnoble.com/pimages/holiday09/giftfinder_searchbar2.jpg) no-repeat top left;
+	margin-left:5px;
+	width:980px;
+	height:88px;
+	/* ie z-index bug*/
+	position:relative;
+	z-index:155;
+	margin-bottom:5px;
+	}
+.search-bar .options {padding-left:108px;padding-top:30px;}
+.search-bar ul,.nav-module ul {list-style:none;margin:2px 0 0;padding:0;float:left;}
+.search-bar ul li {margin-right:8px;display:inline;}
+.search-bar dl.dropdown {float:left;margin:0 8px 0 0;display:inline;}
+.search-bar .hgg-options {float:left;}
+.search-bar #btn-find-gifts {left:-6px}
+#btn-find-gifts {
+	background:url(http://images.barnesandnoble.com/pimages/holiday09/btn_findgifts.png) no-repeat 0 -1px !important;
+	text-indent:-9999px;
+	position:relative;
+	cursor:pointer;
+	display:block;
+	height:35px;
+	width:116px;
+	border:0;
+	top:-6px;
+	float:left;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://images.barnesandnoble.com/pimages/holiday09/btn_findgifts.png' ,sizingMethod= 'crop' );
+	background: none;
+	}
+#holiday-home-link {display:block;
+float:left;
+height:30px;
+text-indent:-9999px;
+width:140px;}
+/* narrow version */
+.nav-module {position:relative;z-index:155px;clear:both;background:url(http://images.barnesandnoble.com/pimages/holiday09/giftfinder_interactivetile.jpg) no-repeat top left;height:302px;width:195px;}
+.nav-module .search-options {padding-top:130px;}
+.nav-module .search-options span {color:#A57B17;font: bold 14px/18px Arial;display:block;margin:3px 5px 3px 35px;}
+.nav-module ul.rb-list, #right-col-sub .nav-module ul.rb-list {margin-left:18px;margin-bottom:10px;display:inline;}
+.nav-module ul.rb-list li, #right-col-sub .nav-module ul.rb-list li {margin-right:5px;background:none;padding:0}
+.nav-module .hgg-options {clear:both;margin-left:12px;}
+.nav-module dl.dropdown {text-align:left;margin:0 0 8px;background:url(http://images.barnesandnoble.com/pimages/holiday09/giftfinder_pulldown_sm.gif) no-repeat top left;width:171px;height:26px;}
+.nav-module dl.dropdown dd ul,.nav-module dl.dropdown dt a {width:169px;}
+.nav-module dl.dropdown a {font-size:10px;}
+.nav-module #btn-find-gifts {margin-left:35px;position:static}
+#right-col-sub .nav-module ul {width:auto}
+#right-col-sub .nav-module ul li {background:none;padding:0;}
+#right-col-sub .nav-module dl ul {padding-bottom:5px;}
+#right-col-sub .nav-module dl ul li {margin-right:0;width:169px;}
+#right-col-sub .nav-module dl dt a {color:#89640B;}
+#right-col-sub .nav-module dl ul li a {color:#20844d;}

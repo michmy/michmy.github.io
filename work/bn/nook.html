@@ -2,15 +2,13 @@
 <html>
 <head>
     <title></title>
-    <script type="text/javascript" src="http://images.barnesandnoble.com/presources/community/js/jquery-latest.js"></script>
-    <script type="text/javascript" src="http://images.barnesandnoble.com/presources/swf/storefront/js/swfobject.js"></script>
-    <script src="http://images.barnesandnoble.com/pimages/js/rotatefade.js"></script>
-    <link href="http://images.barnesandnoble.com/pimages/bravo/css/cdsPDP.css" rel="stylesheet"
-        media="screen" type="text/css" />
+    <script src="/js/rotatefade.js"></script>
     <style>
         #hero
         {
             height: 490px;
+            position: relative;
+            background: #fff;
         }
         
         .nook-features
@@ -25,7 +23,7 @@
         {
             float: left;
             position: absolute;
-            top: 444px;
+            top: 452px;
             z-index: 2;
         }
         #watch-video
@@ -147,40 +145,48 @@
         }
     </style>
 </head>
-<body id="hero">
-    <a id="start-img" href="#">
-        <img border="0" src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_0.jpg" /></a>
-    <ul class='nook-features'>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_1.jpg" />
-        </li>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_2.jpg" />
-        </li>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_3.jpg" />
-        </li>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_4.jpg" />
-        </li>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_5.jpg" />
-        </li>
-        <li>
-            <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_6.jpg" />
-        </li>
-    </ul>
-    <a id="watch-video" style="" href="#" onclick="showVideoDemo();return false;">
-        <img border='0' alt="Play Video" src="http://images.barnesandnoble.com/pimages/bravo/intro/watchvideo.jpg" /></a>
-    <div id='videoBlocker'>
+<body>
+
+
+    <h1 class="project-title">Image Slider <span>2009</span></h1>
+    <p class="project-subtitle">JavaScript</p>
+
+    <div id="hero">
+        <a id="start-img" href="#">
+            <img border="0" src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_0.jpg" />
+        </a>
+        <ul class='nook-features'>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_1.jpg" />
+            </li>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_2.jpg" />
+            </li>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_3.jpg" />
+            </li>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_4.jpg" />
+            </li>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_5.jpg" />
+            </li>
+            <li>
+                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_6.jpg" />
+            </li>
+        </ul>
+        <a id="watch-video" style="" href="#">
+            <img border='0' alt="Play Video" src="http://images.barnesandnoble.com/pimages/bravo/intro/watchvideo.jpg" />
+        </a>
+
     </div>
-    <div id='flashBlocker'>
-    </div>
-    <div id='feedroomWrap'>
-        <a href='#' id='feedroomCloseBtn'></a>
-        <div id='feedroomPlayer'>
-        </div>
-    </div>
+
+
+    <h2>About Project</h2>
+    <p>I refactored my prior image slider plug-in to allow further customization. I could then use my plug-in to introduce the nook.</p>
+
+
+
     <script type="text/javascript">        $('.nook-features').rotatefade({ autorotate: false, callback: function () {
             $('.pod-1').hide();
             $('#page-1').find('a').removeClass();
