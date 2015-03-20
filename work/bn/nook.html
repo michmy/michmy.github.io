@@ -183,19 +183,21 @@
 
 
     <h2>About Project</h2>
-    <p>I refactored my prior image slider plug-in to allow further customization. I could then use my plug-in to introduce the nook.</p>
+    <p>I refactored my image slider plug-in to allow further customization.</p>
 
+    <p>What you see above is a working example of this plug-in. Click on each numbered breadcrumb to see images change.</p>
 
-
-    <script type="text/javascript">        $('.nook-features').rotatefade({ autorotate: false, callback: function () {
+        <script type="text/javascript">
+        $('.nook-features').rotatefade({
+autorotate: false, callback: function () {
             $('.pod-1').hide();
             $('#page-1').find('a').removeClass();
         }
         });
-        $('#start-img').click(function () {
-            $('#page-1').find('a').click();
-            return false;
-        })
-    </script>
+            $('#start-img').click(function () {
+                $('#page-1').find('a').click();
+                return false;
+            })
+        </script>
 </body>
 </html>
