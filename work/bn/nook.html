@@ -151,41 +151,45 @@
     <h1 class="project-title">Image Slider <span>2009</span></h1>
     <p class="project-subtitle">JavaScript</p>
 
-    <div id="hero">
-        <a id="start-img" href="#">
-            <img border="0" src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_0.jpg" />
-        </a>
-        <ul class='nook-features'>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_1.jpg" />
-            </li>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_2.jpg" />
-            </li>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_3.jpg" />
-            </li>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_4.jpg" />
-            </li>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_5.jpg" />
-            </li>
-            <li>
-                <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_6.jpg" />
-            </li>
-        </ul>
-        <a id="watch-video" style="" href="#">
-            <img border='0' alt="Play Video" src="http://images.barnesandnoble.com/pimages/bravo/intro/watchvideo.jpg" />
-        </a>
+    <div class="hidden-xs hidden-sm">
+        <div id="hero">
+            <a id="start-img" href="#">
+                <img border="0" src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_0.jpg" />
+            </a>
+            <ul class='nook-features'>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_1.jpg" />
+                </li>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_2.jpg" />
+                </li>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_3.jpg" />
+                </li>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_4.jpg" />
+                </li>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_5.jpg" />
+                </li>
+                <li>
+                    <img src="http://images.barnesandnoble.com/pimages/bravo/intro/Nookpanel_6.jpg" />
+                </li>
+            </ul>
+            <a id="watch-video" style="" href="#">
+                <img border='0' alt="Play Video" src="http://images.barnesandnoble.com/pimages/bravo/intro/watchvideo.jpg" />
+            </a>
 
+        </div>
     </div>
+
+    <img src="/images/projects/bn-nook-screenshot.png" class="screenshot hidden-md hidden-lg" />
 
 
     <h2>About Project</h2>
     <p>I refactored my image slider plug-in to allow further customization.</p>
 
-    <p>What you see above is a working example of this plug-in. Click on each numbered breadcrumb to see images change.</p>
+    <p class="hidden-xs hidden-sm">What you see above is a working example of this plug-in. Click on each numbered breadcrumb to see images change.</p>
 
         <script type="text/javascript">
         $('.nook-features').rotatefade({

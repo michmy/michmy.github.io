@@ -569,8 +569,10 @@ footer p {
 	z-index: 999;
 }
 
-#project-viewer-content img {
+#project-viewer-content img.screenshot {
     max-width: 100%;
+    display: block;
+    margin: 0 auto;
 }
 
 #project-viewer-content .project-title{
