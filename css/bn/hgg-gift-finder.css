@@ -111,7 +111,7 @@ dl.dropdown dd ul li a:hover {background-color:#d0c9af;text-decoration:none}
 ul li .rb-option {margin-right:5px;position:relative;top:2px;}
 
 /* carousel form options */
-.gift-finder-carousel {height:227px;width:980px;background:url(http://images.barnesandnoble.com/pimages/holiday09/slider_bg.jpg) no-repeat top left; margin: 0 auto;}
+.gift-finder-carousel {height:227px;width:300px;background:url(http://images.barnesandnoble.com/pimages/holiday09/slider_bg.jpg) no-repeat top left; margin: 0 auto;}
 .gift-finder-carousel iframe {float:left}
 .gift-finder-carousel .search-options {float:left;width:302px;height:227px;background:url(http://images.barnesandnoble.com/pimages/holiday09/Slider_head.jpg) no-repeat top left}
 .gift-finder-carousel .search-options .options {padding-left:40px;padding-top:90px;}
