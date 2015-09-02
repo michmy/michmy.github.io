@@ -35,8 +35,11 @@ var HGGGiftFinder = function() {
     };
     var carouselInit = function() {
         $('select.source').customselect();
-        $('select.source').change(loadIframe);
-        $('input.rb-option').click(function(){showHideOptions();loadIframe();});
+        //$('select.source').change(loadIframe);
+        $('input.rb-option').click(function () {
+            showHideOptions();
+            //loadIframe();
+        });
     };
     var formInit = function() {
         $('select.source').customselect();
