@@ -320,3 +320,13 @@ $(document).on("click", '#desktop_scale', function (e) {
     $('#scaler .holder').css({ 'width': '100%', 'max-width': '100%' });
 
 });
+
+
+
+
+$(window).on('load', function() {
+    $('.loader').fadeOut();
+    $('#preloader').delay(350).fadeOut('slow');
+    $('body').delay(350);
+});
+
