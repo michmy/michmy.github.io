@@ -1,116 +1,185 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta name="description" content="Michelle Yang, a front end web developer, personal portfolio">
-    <meta name="keywords" content="Michelle Yang, a front end web developer, personal portfolio">
+    <meta name="description" content="Michelle Yang, front end web developer, personal portfolio">
+    <meta name="keywords" content="Michelle Yang, front end web developer, personal portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Michelle Yang - a Front End Web Developer</title>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet'
-        type='text/css'>
-    <style>
-        body
-        {
-            font: 16px 'Open Sans' , Verdana, sans-serif;
-            line-height: 1.5;
-        }
-        
-        /* nutrition box */
-        #nutri-info
-        {
-            border: 1px solid #000;
-            color: #333;
-            padding: 10px;
-            margin: 20px;
-        }
-        #nutri-info p
-        {
-            margin: 0;
-            font-size: 0.8em;
-        }
-        
-        .my-name
-        {
-            font-size: 1.5em;
-            font-weight: 700;
-            padding: 0;
-            margin: 0;
-        }
-        .my-title
-        {
-            font-size: 0.9em;
-            padding: 0 0 6px 0;
-            margin: 0;
-        }
-        
-        .info
-        {
-            border-top: 5px solid #000;
-            border-bottom: 2px solid #000;
-            margin: 10px 0;
-            padding: 0;
-            list-style: none;
-            font-size: 0.9em;
-        }
-        .info li
-        {
-            border-bottom: 1px solid #000;
-            margin: 0;
-            padding: 8px 0;
-        }
-        
-        .projects
-        {
-            overflow: auto;
-            font-size: 0.9em;
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-        .projects a:link, .projects a:active, .projects a:visited
-        {
-            color: #ff6347;
-            text-decoration: none;
-            text-decoration: underline;
-        }
-        .projects a:after
-        {
-            content: " \00bb";
-        }
-        .projects a:hover
-        {
-            text-decoration: none;
-        }
-        
-        @media screen and (min-width : 980px)
-        {
-            #nutri-info
-            {
-                width: 300px;
-            }
-        }
-    </style>
+    <title>Michelle Yang - Front End Web Developer</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <link rel="stylesheet" href="../fontello/fontello.css" />
+    <link rel="stylesheet" href="../css/default.css" />
 </head>
 <body>
-    <div id="nutri-info">
-        <h1 class="my-name">
-            Michelle Yang</h1>
-        <h2 class="my-title">
-            Front-End Web Developer</h2>
-        <p>
-            Serving Size: 1</p>
-        <p>
-            Calories: 115</p>
-        <p>
-            <strong>Amount Per Serving</strong></p>
-        <ul class="info">
-            <li><strong>Skills:</strong> HTML, CSS, XML/XSL, JavaScript</li>
-            <li><strong>Passion:</strong> Web standards, well-written markup and clean code</li>
-            <li><strong>Responsibilities:</strong> Front-end development, write semantic HTML and
-                cross-browser-compatible CSS</li>
-        </ul>
-        <ul class="projects">
-            <li><a href="work.html">Portfolio</a></li>
-        </ul>
+    <header class="header">
+        <div class="container clearfix">
+            <div>
+                <a class="nav-item" href="#about">About Me</a>
+                <!--<a class="nav-item" href="#resume" data-section="#resume">Resume</a>-->
+                <a class="nav-item" href="#portfolio">Portfolio</a>
+            </div>
+            <div class="pull-right">
+                <a class="social-icon" href="https://twitter.com/miichelleyang" title="Twitter"><i class="icon-twitter-bird"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/in/michmy" title="LinkedIn"><i class="icon-linkedin"></i></a>
+                <a class="social-icon" href="https://codepen.io/michmy/" title="Codepen"><i class="icon-codepen"></i></a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <div class="home-overlay">
+            <div class="container">
+                <div class="home-inner">
+                    <div class="home-content">
+                        <h1 class="home-heading">Hello, my name is <span class="color-primary">Michelle</span></h1>
+                        <h2 class="home-sub-heading">Front End Developer from New York City</h2>
+                        <a href="#about" class="btn btn-primary btn-lg">Learn more</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <h1 id="about" class="sub-heading color-primary anchor">About me</h1>
+
+
+                    <p class="text">
+                        I have over ten years of experience in front-end development. I write semantic HTML and cross-browser-compatible CSS. I have a passion for web standards, responsive design, well-written markup and clean code.
+
+                        I have a strong grasp of JavaScript and using JavaScript libraries, such as jQuery. I have also used JavaScript frameworks such as Knockout and Vue.js.
+                    </p>
+                  
+
+                    <hr/>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-md-offset-1">
+                    <h2 class="sub-heading color-primary">Key skills</h2>
+
+                    <ul>
+                        <li>HTML5</li>
+                        <li>CSS3/LESS</li>
+                        <li>Responsive Design</li>
+                        <li>JavaScript/ES6</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3 col-md-3">
+                    <h2 class="sub-heading color-primary">Experience with</h2>
+
+                    <ul>
+                        <li>ASP.NET MVC</li>
+                        <li>Vue.js</li>
+                        <li>Webpack</li>
+                        <li>Gulp</li>
+                        <li>Knockout</li>
+                        <li>Wordpress</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-4 col-md-3">
+                    <h2 class="sub-heading color-primary">Methodologies</h2>
+
+                    <ul>
+                        <li>OOCSS</li>
+                        <li>SMACSS</li>
+                        <li>BEM</li>
+                        <li>Agile</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+<section style="background: #ff4081">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+
+                <h1 id="portfolio" class="sub-heading color-white anchor">Portfolio</h1>
+                <div class="row">
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card item">
+                            <div class="card-image">
+                                <img class="activator" src="/images/projects/ow-email.png">
+                            </div>
+                            <div class="card-content">
+                                <a class="activator card-title color-primary">Responsive emails</a>
+                                <p>Coded responsive emails using table layout and media queries</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="deactivator card-title">About the project<span class="deactivator close pull-right">&times;</span></span>
+                                <p>I coded emails that were sent to recruiting firms about job applicants. I worked with the UX Designer to ensure the email would scale and render properly across different smartphones.</p>
+                                <p><a href="/work/ow/responsive/scaler.html" class="view-project" id="1" data-id="1">View Demo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card item">
+                            <div class="card-image">
+                                <img class="activator" src="/images/projects/ow-landing.png">
+                            </div>
+                            <div class="card-content">
+                                <a class="activator card-title color-primary">Responsive design</a>
+                                <p>Converted a desktop-only website to scale for mobile</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="deactivator card-title">About the project<span class="deactivator close pull-right">&times;</span></span>
+                                <p>I converted OneWire's desktop-only website to a mobile-friendly responsive site. I worked with the UX designer to restructure all the content to adapt for mobile.</p>
+                                <p><a href="/work/ow/landing/scaler.html" class="view-project" id="2" data-id="2">View Demo</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card item">
+                            <div class="card-image">
+                                <img class="activator" src="/images/projects/kh-birth.png">
+                            </div>
+                            <div class="card-content">
+                                <a class="activator card-title color-primary">Birth Announcement</a>
+                                <p>Created a birth annoucement when my first daughter was born</p>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="deactivator card-title">About the project<span class="deactivator close pull-right">&times;</span></span>
+                                <p>When my daughter was born, I created a birth announcement using HTML, CSS and JavaScript.</p>
+                                <p><a href="/kylie/index.html" class="view-project" id="3" data-id="3">View Demo</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
+
+
+    <div id="project-viewer" class="modal fade">
+        <span id="close-project-viewer" data-dismiss="modal">&times;</span>
+        <div class="container">
+            <div id="project-viewer-content"></div>
+            <div id="project-viewer-footer">
+
+                <div class="project-nav">
+
+                    <span class="previous-project" data-toggle="tooltip" data-placement="bottom" title="Previous Project"><i class="icon-left"></i></span>
+                    <span class="back-to-portfolio" data-toggle="tooltip" data-placement="bottom" title="Back to Portfolio" data-dismiss="modal"><i class="icon-th-thumb"></i></span>
+                    <span class="next-project" data-toggle="tooltip" data-placement="bottom" title="Next Project"><i class="icon-right"></i></span>
+
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /.modal -->
+
+<script src="/dist/build.js"></script>
 </body>
 </html>
