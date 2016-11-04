@@ -59,90 +59,17 @@
 </head>
 <body>
 
-    <div class="hidden-xs hidden-sm">
-        <h1 class="project-title">Birth Annoucement <span>2010</span></h1>
-        <p class="project-subtitle">HTML/CSS/JavaScript</p>
+    
 
-
-        <div id="wrap">
-            <h1>
-
-                <span id="first">Kylie</span><br />
-                <span id="last">Huynh</span>
-            </h1>
-            <div id="thin">
-            </div>
-            <div id="birth-details">
-                <span>Nov 2nd 2010 / 1:35pm / 7 pounds / 2 ounces / 19 3/4 inches</span>
-            </div>
-            <div id="thick">
-
-                <ul class="menu">
-                    <li><a href="#">details</a></li>
-                    <li><a href="#">photos</a></li>
-                    <li><a href="#">email</a></li>
-                </ul>
-            </div>
-
-
-            <div id="parents">Proud new parents, Khuong & Michelle Huynh</div>
-
-        </div>
-    </div>
-
-    <img src="/images/projects/kh-birth-screenshot.png" class="screenshot hidden-md hidden-lg" />
+    <img src="/images/projects/kh-birth-screenshot.png" class="screenshot" />
 
 
     <h2>About Project</h2>
-    <p>Built a birth annoucement using HTML, CSS and JavaScript.</p>
+    <p>When my daughter was born, I created a birth announcement using HTML, CSS and JavaScript.</p>
+
+   
 
 
-    <script type="text/javascript" src="/kylie/cufon-yui.js"></script>
-
-    <script type="text/javascript" src="/kylie/HelveticaTextbook-Bold_400.font.js"></script>
-
-    <script type="text/javascript">
-
-
-
-        function animateLines() {
-            $('#thin').animate({ 'width': '600px' }, 2000);
-            $('#thick').animate({ marginLeft: 0 }, 2000, fadeInDetails);
-        }
-
-        function fadeInLast() {
-            $('#last').fadeIn(1500, animateLines);
-        }
-
-        function fadeInDetails() {
-            $('#birth-details span').fadeIn(1500, fadeInParents)
-        }
-
-        function fadeInParents() {
-            $('#parents').fadeIn(1500, fadeInMenu)
-        }
-
-        function fadeInMenu() {
-            $('#thick .menu').fadeIn(1500)
-        }
-        $(function () {
-            Cufon.replace('#wrap h1, #birth-details, #parents');
-            Cufon.replace('ul.menu li a', { hover: { color: '#ff9ed7'} })
-
-            $('#first').fadeIn(1500, fadeInLast);
-
-        });
-    </script>
-
-<noscript>
-<style>
-    .menu,#parents,#birth-details span {display:block}
-    #wrap h1 {height:auto;}
-    #wrap h1 span {display:inline;}
-    #thin {width:600px;}
-    #thick {margin-left:0;}
-</style>
-</noscript>
 </body>
 </html>
 
