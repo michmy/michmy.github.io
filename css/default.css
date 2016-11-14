@@ -4,6 +4,9 @@
     line-height: 1.5;
     color: #727272;
 }
+img {
+    max-width: 100%;
+}
 section {
     padding: 60px 0;
 }
