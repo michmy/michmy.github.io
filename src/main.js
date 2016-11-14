@@ -1,7 +1,4 @@
-﻿import $ from 'jquery'
-import velocity from 'velocity-animate'
-
-!function(a) {
+﻿!function(a) {
     "use strict";
     function b(b, d) {
         return this.each(function() {
@@ -320,9 +317,6 @@ $(document).on("click", '#desktop_scale', function (e) {
     $('#scaler .holder').css({ 'width': '100%', 'max-width': '100%' });
 
 });
-
-
-
 
 $(window).on('load', function() {
     $('.loader').fadeOut();

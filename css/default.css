@@ -39,6 +39,13 @@ section {
         border-bottom-color: #ff4081;
         color: #ff4081;
     }
+
+@media (max-width: 400px) {
+    .nav-item {
+        margin-right: 20px;
+        font-size: 14px;
+    }
+}
 .home {
     background: url(../../images/html-code.jpg) no-repeat fixed 0 0 / cover;
     padding: 0;
@@ -135,7 +142,8 @@ a.social-icon:hover {
 }
 
 .activator, .deactivator {
-  cursor: pointer;
+    cursor: pointer;
+    font-size: 35px;
 }
 .card {
     position: relative;
@@ -195,8 +203,8 @@ a.social-icon:hover {
 	position: absolute;
 	padding:0 20px;
 	right:20px;
-	top:20px;
-	font-size: 98px;
+	top:0;
+	font-size: 50px;
 	line-height: 78px;
 	font-weight: 100;
 	cursor: pointer;
