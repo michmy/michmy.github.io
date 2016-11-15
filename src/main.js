@@ -1,4 +1,7 @@
-﻿!function(a) {
+﻿var $ = require('jquery')
+var velocity = require('velocity-animate')
+
+!function(a) {
     "use strict";
     function b(b, d) {
         return this.each(function() {
@@ -243,29 +246,24 @@ function(a) {
 }(jQuery)
 
 let currentItem = 0;
-
 $('body').on('click', '.view-project', function (e) {
     e.preventDefault();
     loadProject($(this));
     $('#project-viewer').modal({ backdrop: false });
 });
-
 /*Projects navigation*/
 $('.project-nav .next-project').click(function () {
     let id = currentItem + 1,
         $newProject = $('#' + id);
-    
     $('#project-viewer .container').fadeOut(500, function () { loadProject($newProject); });
 });
 
 $('.project-nav .previous-project').click(function () {
     let id = currentItem - 1,
         $newProject = $('#' + id);
-    
     $('#project-viewer .container').fadeOut(500, function () { loadProject($newProject); });
 });
 function loadProject($project) {
-
     $('.item').removeClass('active');
     $project.parents('.item').addClass('active');
     currentItem = $project.data('id');
@@ -276,9 +274,7 @@ function loadProject($project) {
     });
 
 }
-
 function afterLoadFn() {
-
     $('#project-viewer').scrollTop(0);
     
     if (currentItem == 1) { $('#project-viewer .previous-project').addClass('hidden'); }
@@ -286,30 +282,24 @@ function afterLoadFn() {
 
     if (currentItem == ($('.item').length)) { $('#project-viewer .next-project').addClass('hidden'); }
     else { $('#project-viewer .next-project').removeClass('hidden'); }
-    
-
-
 }
 /*Close project Modal*/
 $('#project-viewer').on('hidden.bs.modal', function () {
     $('#project-viewer-content').empty();
     $('#project-viewer .container').fadeOut();
 });
-
 $(document).on("click", '#mobile_scale', function (e) {
     $('#scaler img').removeClass('active');
     $(this).addClass('active');
     $('#tc_central').css({ 'width': '400px', 'max-width': '400px' });
     $('#scaler .holder').css({ 'width': '400px', 'max-width': '400px' })
 });
-
 $(document).on("click", '#tablet_scale', function (e) {
     $('#scaler img').removeClass('active');
     $(this).addClass('active');
     $('#tc_central').css({ 'width': '600px', 'max-width': '600px' });
     $('#scaler .holder').css({ 'width': '600px', 'max-width': '600px' });
 });
-
 $(document).on("click", '#desktop_scale', function (e) {
     $('#scaler img').removeClass('active');
     $(this).addClass('active');
@@ -317,7 +307,6 @@ $(document).on("click", '#desktop_scale', function (e) {
     $('#scaler .holder').css({ 'width': '100%', 'max-width': '100%' });
 
 });
-
 $(window).on('load', function() {
     $('.loader').fadeOut();
     $('#preloader').delay(350).fadeOut('slow');
