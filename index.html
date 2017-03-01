@@ -72,13 +72,18 @@
         .social-svg {
             width: 2em;
             fill: #ee6e73;
+            transition: all 0.3s;
+        }
+        a.link-social:hover .social-svg {
+            fill: #222;
         }
         .intro {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            
             background: #fff;
+            padding: 2em 0;
         }
         .container {
             width: 80%;
@@ -98,6 +103,10 @@
         @media (min-width: 1024px) {
              .container {
                 width: 40%;
+            }
+            .intro {
+                height: 100vh;
+                padding: 0;
             }
         }
     </style>
