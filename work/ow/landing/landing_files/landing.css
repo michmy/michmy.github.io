@@ -1,8 +1,0 @@
-﻿#wrapper {
-    background: url("assets/images/public/city_bg_tile.jpg") 0 -106px repeat-x;            
-}
-@media screen and (max-width: 980px) {
-    #wrapper {
-	    background: url("assets/images/public/bg_city_tile_small.png") 0 -12px repeat-x;
-    }
-}

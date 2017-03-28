@@ -7,7 +7,7 @@
 
     <title>Michelle Yang - Front End Developer</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    
     <link id="favicon" rel="icon" type="image/x-icon" href="favicon.ico">
     <meta property="og:locale" content="en_US" />
     <meta property="og:type" content="website" />
@@ -22,102 +22,16 @@
     <meta name="twitter:site" content="@miichelleyang" />
     <meta name="twitter:image" content="https://michmy.github.io/images/screenshot.png"/>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins|Roboto');
-
-        * {
-          box-sizing: border-box;
-        }
-        body {
-          font: 16px 'Roboto', sans-serif;
-          color: #444;
-          line-height: 1.5;
-          padding: 0;
-          margin: 0;
-            background: #f8f8f8;
-        }
-        h1 {
-          font-family: 'Poppins';
-          font-size: 28px;
-        }
-        h2 {
-          font-family: 'Poppins';
-          font-size: 20px;
-        }
-        hr {
-            width: 100%;
-            height: 1px;
-            margin: 50px 0;
-            background: #E5E5E5;
-            border: none;
-        }
-        img {
-            max-width: 100%;
-        }
-        a:link, a:visited {
-            color: #ee6e73;
-            transition: all 0.3s;
-        }
-        a:hover, a:active {
-            color: #999;
-        }
-        a.link-social {
-            text-decoration: none;
-            display: inline-block;
-            margin-right: 1em;
-        }
-        a.link-social:last-child {
-            margin-right: 0;
-        }
-        .social-svg {
-            width: 2em;
-            fill: #ee6e73;
-            transition: all 0.3s;
-        }
-        a.link-social:hover .social-svg {
-            fill: #222;
-        }
-        .intro {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
-            background: #fff;
-            padding: 2em 0;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-        }
-        .thumb {
-            display: block;
-            margin: 0 auto 20px;
-            border: 1px solid #E5E5E5;
-            box-shadow: 0 4px 20px 0 rgba(168, 182, 191, 0.6);
-        }
-        .cite {
-            text-align: right;
-            margin-bottom: 4em;
-            color: #5F6242;
-        }
-        @media (min-width: 1024px) {
-             .container {
-                width: 40%;
-            }
-            .intro {
-                height: 100vh;
-                padding: 0;
-            }
-        }
-    </style>
+    <link href="/dist/default.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="intro">
+    <div id="top" class="intro">
         <div class='container'>
             <h1>Hello, my name is <a style="text-decoration: none" href="mailto:michmy@gmail.com">Michelle</a>.</h1>
             <p>I am a front end developer from New York City.</p>
             <p>I have over 10 years of experience writing both hand-coded and framework-assisted HTML, CSS and JavaScript. I have a passion for web standards, responsive design, well-written markup and clean code.</p>
-            <p>My current tech stack includes HTML5, CSS3/LESS, JS/ES6, ASP.NET MVC, npm, gulp, and webpack. I use OOCSS, SMACSS, and BEM. I build user interfaces, microsites, landing pages, and web applications. <a href="#work" id="js-link-work">Take a look</a> at some of the work.</p>
+            <p>My current tech stack includes HTML5, CSS3/LESS, JS/ES6, ASP.NET MVC, npm, gulp, and webpack. I use OOCSS, SMACSS, and BEM. I build user interfaces, microsites, landing pages, and web applications. 
+            <a href="#work" data-target="work" id="js-link-work">Take a look</a> at some of the work.</p>
             <div style="margin-top: 5em; text-align: center">
                 <a class="link-social" href="https://www.linkedin.com/in/michmy" title="LinkedIn">
                     <svg class="social-svg" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M13.632 13.635h-2.37V9.922c0-.886-.018-2.025-1.234-2.025-1.235 0-1.424.964-1.424 1.96v3.778h-2.37V6H8.51v1.04h.03c.318-.6 1.092-1.233 2.247-1.233 2.4 0 2.845 1.58 2.845 3.637v4.188zM3.558 4.955c-.762 0-1.376-.617-1.376-1.377 0-.758.614-1.375 1.376-1.375.76 0 1.376.617 1.376 1.375 0 .76-.617 1.377-1.376 1.377zm1.188 8.68H2.37V6h2.376v7.635zM14.816 0H1.18C.528 0 0 .516 0 1.153v13.694C0 15.484.528 16 1.18 16h13.635c.652 0 1.185-.516 1.185-1.153V1.153C16 .516 15.467 0 14.815 0z" fill-rule="nonzero"></path></svg>
@@ -138,30 +52,30 @@
     <div class="container" id="work" style="padding-top: 2em">
         <h2>OneWire</h2>
 
-        <img class="thumb" src="/images/projects/2017/onewire.jpg"/>
-        <img class="thumb" src="/images/projects/2017/jobdetails.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/onewire.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/jobdetails.jpg"/>
 
         <hr/>
 
         <h2>MRM Worldwide</h2>
 
-        <img class="thumb" src="/images/projects/2017/motm.jpg"/>
-        <img class="thumb" src="/images/projects/2017/smirnoff.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/motm.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/smirnoff.jpg"/>
 
         <hr/>
 
         <h2>Barnes & Noble.com</h2>
 
-        <img class="thumb" src="/images/projects/2017/nook.jpg"/>
-        <img class="thumb" src="/images/projects/2017/ebooks.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/nook.jpg"/>
+        <img class="thumb" src="/assets/images/projects/2017/ebooks.jpg"/>
     </div>
 
-    <div style="background: #fff;padding-bottom: 5em">
-        <div class="container" style="padding-top: 2em">
+<div style="background: #fff; padding-bottom: 5em">
+    <div class="container" style="padding-top: 2em">
         <h2>What others say</h2>
 
         <blockquote>
-            "Michelle  is smart, calm, approachable and demonstrates good creative skills. Her work is commendable, high quality and reusable. She takes ownership of the project and sees it through completion, her leadership quality and willingness to help team members makes her distinct in the team."
+            "Michelle is smart, calm, approachable and demonstrates good creative skills. Her work is commendable, high quality and reusable. She takes ownership of the project and sees it through completion, her leadership quality and willingness to help team members makes her distinct in the team."
         </blockquote>
         <div class="cite">
             <cite>&mdash; Muthukaruppan Annamalai</cite>
@@ -187,10 +101,11 @@
             My work history can be found on <a href="https://www.linkedin.com/in/michmy">LinkedIn</a>.
             I have code snippets and more sample work over at <a href="https://codepen.io/michmy/">CodePen.io</a>.
         </p>
-        </div>
-    
     </div>
-<!--script src="dist/build.js"></script-->
+
+</div>
+<a href="#top" class='link-back-to-top' id="js-link-top" title="Back to top">Back to top</a>
+<script src="/dist/build.js"></script>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
