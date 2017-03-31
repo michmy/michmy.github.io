@@ -1,8 +1,6 @@
 ﻿import animateScrollTo from 'animated-scroll-to'
 import './../../css/default.less'
 
-
-
 function scrollTo(e) {
     
     animateScrollTo(document.getElementById(this.getAttribute('data-target')).offsetTop)
@@ -13,6 +11,7 @@ function scrollToTop(e) {
     animateScrollTo(0)
     e.preventDefault()
 }
+
 function scrollListener() {
 
     let ticking = false,
