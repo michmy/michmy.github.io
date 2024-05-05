@@ -1,0 +1,18 @@
+<section id="work" class="pt-20" aria-label="Selected projects">
+    <div class="uppercase text-blue-light">work</div>
+    <h3 class="font-serif text-4xl mb-16">Selected projects</h3>
+    <div id="works">
+        {% for project in projects %}
+            <h4 class="mb-6">
+                <a class="hover:underline" href="{{ project.href }}" target="_blank">
+                    {{ project.title }}
+                </a>
+            </h4>
+            <ul class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+                {% for img in project.imgs %}
+                    <li><img class="block mx-auto w-600px h-300px rounded-xl object-cover shadow-md shadow-light-300 mb-6" loading="lazy" alt="{{ img.alt }}" src="{{ img.src }}"/></li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+    </div>
+</section>

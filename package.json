@@ -3,10 +3,10 @@
 	"version": "1.0.0",
 	"description": "Visit http://michmy.github.io",
 	"scripts": {
-		"start": "npm-run-all -p dev:*",
-		"build": "run-s build:*",
+		"dev": "npm-run-all -p dev:*",
 		"dev:11ty": "eleventy --serve",
 		"dev:css": "tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o src/styles/default.css --watch",
+		"build": "run-s build:*",
 		"build:11ty": "eleventy",
 		"build:css": "tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o src/styles/default.css --minify"
 	},
