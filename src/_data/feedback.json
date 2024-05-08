@@ -3,18 +3,18 @@
         "quote": "Not only Michelle has fantastic technical skills but she also has a great ability to break down large complex problems into smaller ones. She has great attention to detail and have always helped our team QA features and big changes to the product.",
         "name": "Rafael",
         "role": "Product Engineer",
-        "avatar": "/images/avatars/raf.jpeg"
+        "avatar": "images/avatars/raf.jpeg"
     },
     {
         "quote": "Michelle is smart, calm, approachable and demonstrates good creative skills. Her work is commendable, high quality and reusable. She takes ownership of the project and sees it through completion, her leadership quality and willingness to help team members makes her distinct in the team.",
         "name": "Muthukaruppan",
         "role": "Data Science Manager",
-        "avatar": "/images/avatars/muthu.jpeg"
+        "avatar": "images/avatars/muthu.jpeg"
     },
     {
         "quote": "Michelle's talent becomes obvious in about 3 minutes. Attention to detail, flawless taste, dedication and enthusiasm make her an absolutely wonderful developer and a pleasant person to work with.",
         "name": "Stan",
         "role": "Associate Director",
-        "avatar": "/images/avatars/stan.jpeg"
+        "avatar": "images/avatars/stan.jpeg"
     }
 ]
