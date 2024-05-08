@@ -11,7 +11,7 @@
 		"build:css": "tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o src/styles/default.css --minify"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^1.0.0",
+		"@11ty/eleventy": "^2.0.1",
 		"npm-run-all": "^4.1.5",
 		"tailwindcss": "^3.0.0"
 	},
