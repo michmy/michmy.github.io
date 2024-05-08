@@ -1,0 +1,21 @@
+{
+	"name": "michmy.github.io",
+	"version": "1.0.0",
+	"description": "Visit http://michmy.github.io",
+	"scripts": {
+		"dev": "npm-run-all -p dev:*",
+		"dev:11ty": "eleventy --serve",
+		"dev:css": "tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o src/styles/default.css --watch",
+		"build": "run-s build:*",
+		"build:11ty": "eleventy",
+		"build:css": "tailwindcss -i src/styles/tailwind.css -c src/styles/tailwind.config.js -o src/styles/default.css --minify"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^1.0.0",
+		"npm-run-all": "^4.1.5",
+		"tailwindcss": "^3.0.0"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

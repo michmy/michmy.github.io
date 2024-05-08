@@ -1,0 +1,23 @@
+<section id="recommend" aria-label="Words from colleagues" class="py-28">
+    <div class="uppercase text-blue-light">feedback</div>
+    <h3 class="font-serif text-4xl mb-16">Words from colleagues</h3>
+    <div class="grid xl:grid-cols-3 gap-8">
+    {% for fbk in feedback %}
+        <blockquote class="flex flex-col justify-between border rounded-xl p-8 border-light-300">
+            <div></div>
+            <p class="mb-5">
+                &quot;{{ fbk.quote }}&quot;
+            </p>
+            <cite class="flex gap-4">
+                <img src="{{ fbk.avatar }}" loading="lazy" alt="" class="rounded-full w-12 h-12 border-light-300"/>
+                <div>
+                    <p class="not-italic font-bold">
+                        {{ fbk.name }}
+                    </p>
+                    <p class="not-italic">{{ fbk.role }}</p>
+                </div>
+            </cite>
+        </blockquote>
+    {% endfor %}
+    </div>
+</section>

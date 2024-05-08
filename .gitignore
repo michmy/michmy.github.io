@@ -1,3 +1,5 @@
 ﻿/node_modules/*
 *.map
 .prettierrc
+_site
+package-lock.json
