@@ -612,6 +612,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -650,6 +654,10 @@ video {
 
 .h-9 {
   height: 2.25rem;
+}
+
+.h-dvh {
+  height: 100dvh;
 }
 
 .max-h-16 {
@@ -800,11 +808,6 @@ video {
   padding-right: 2rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -825,12 +828,31 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-32 {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.py-20 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pt-20 {
   padding-top: 5rem;
 }
 
 .pt-32 {
   padding-top: 8rem;
+}
+
+.pb-32 {
+  padding-bottom: 8rem;
 }
 
 .align-middle {
